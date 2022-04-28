@@ -60,5 +60,11 @@ const copyrightYear = document.querySelector("#copyrightYear");
 // const theDate = document.querySelector("p");
 
 // copyrightYear.textContent = currentDateAndTime.getFullYear();
-copyrightYear.textContent = currentDateTime;
+copyrightYear.textContent = currentYear;
 // theDate.innerHTML = `<strong>${currentDateAndTime}</strong>`;
+
+// Variable to update the lastModified div
+const lastModified = document.querySelector("#lastModified");
+
+// Update the lastModified div with the current date
+lastModified.textContent += currentDateTime;
