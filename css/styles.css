@@ -20,6 +20,11 @@ header {
   background: lightblue;
 }
 
+picture {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   border: 6px solid #667;
   background: whitesmoke;
@@ -31,7 +36,7 @@ footer {
 }
 
 img {
-  float: right;
+  /* float: right; */
   box-shadow: 2px 2px 6px grey;
   border: 6px solid white;
   padding: 0px;
