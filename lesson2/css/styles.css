@@ -1,0 +1,160 @@
+/* https://coolors.co/ef3e36-17bebb-2e282a-ffffff-f7d08a */
+
+* {
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  display: grid;
+  justify-content: center;
+}
+
+header {
+  max-width: 356px;
+}
+footer {
+  /* max-width: 640px;
+  max-width: 390px;
+  max-width: 293px; */
+  /* max-width: 321px; */
+  max-width: 356px;
+  /* margin: 0 auto; */
+}
+
+header,
+section,
+footer {
+  margin-bottom: 32px;
+  border-top: 8px solid whitesmoke;
+  border-bottom: 12px solid whitesmoke;
+  border-left: 4px solid whitesmoke;
+  border-right: 24px solid whitesmoke;
+}
+
+header {
+  /* max-width: 420px; */
+  /* width: 293px; */
+  /* width: 320px; */
+  /* border-top: 8px solid whitesmoke;
+  border-bottom: 12px solid whitesmoke;
+  border-left: 4px solid whitesmoke;
+  border-right: 24px solid whitesmoke; */
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+footer {
+  text-align: center;
+}
+
+section,
+picture,
+img {
+  padding: 1rem 0px;
+}
+
+section {
+  /* box-shadow: 4px 4px 8px gray; */
+  /* max-width: 321px; */
+  height: 1200px;
+  max-width: 356px;
+  padding: 0px;
+  margin-left: -16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  width: inherit;
+  width: 321px;
+  width: 360px;
+  /* max-width: 293px; */
+}
+
+h3,
+h4,
+a {
+  margin-left: 16px;
+}
+
+h1 {
+  /* font-family: "Water Brush", cursive; */
+  font-family: "Vujahday Script", cursive;
+  font-size: 3rem;
+  /* text-shadow: 2px 2px 4px darkgrey; */
+  max-width: 293px;
+  color: tomato;
+  /* border-top: 8px solid whitesmoke;
+  border-bottom: 12px solid whitesmoke;
+  border-left: 4px solid whitesmoke;
+  border-left: 4px solid tomato;
+  border-right: 24px solid whitesmoke; */
+}
+
+h2 {
+  color: white;
+  background: tomato;
+  width: 320px;
+  width: 356px;
+  /* border-top: 8px solid coral;
+  border-bottom: 12px solid coral;
+  border-left: 4px solid coral;
+  border-right: 24px solid coral; */
+}
+
+h3 {
+  font-family: "Vujahday Script", cursive;
+  font-size: 1.6rem;
+  /* text-shadow: 2px 2px 4px darkgrey; */
+  color: tomato;
+}
+
+h4 {
+  background: tomato;
+  color: white;
+  width: 320px;
+  width: 356px;
+}
+
+a {
+  color: #17bebb;
+}
+
+img {
+  margin: 1rem;
+  padding-bottom: 0px;
+  box-shadow: 2px 2px 8px darkgrey;
+  /* border-radius: 16px;
+  border: 5px solid #2e282a; */
+}
+
+p {
+  /* background: #17bebb;
+  color: white;
+  padding-left: 32px;
+  padding-right: 32px; */
+  color: #2e282a;
+}
+
+ul {
+  list-style-type: none;
+  background: #17bebb;
+  color: white;
+}
+
+ul,
+li {
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}

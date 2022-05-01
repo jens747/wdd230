@@ -37,7 +37,7 @@ footer {
 
 img {
   /* float: right; */
-  box-shadow: 2px 2px 6px grey;
+  box-shadow: 2px 2px 6px dimgrey;
   border: 6px solid white;
   padding: 0px;
   margin: 1rem 2rem;
