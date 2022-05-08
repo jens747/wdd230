@@ -1,14 +1,14 @@
 @media (min-width: 32.5em) {
-    h1 {
-        text-align: start;
-    }
+  h1 {
+    text-align: start;
+  }
 
-    picture {
-        display: block;
-    }
-    
-    img {
-        float: left;
-        max-width: 8rem;
-    }
+  picture {
+    display: block;
+  }
+
+  img {
+    float: left;
+    max-width: 8rem;
+  }
 }
