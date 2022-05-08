@@ -1,0 +1,61 @@
+@media (min-width: 720px) {
+  /* h1 {
+    text-align: center;
+  } */
+
+  /* picture {
+    display: block;
+  }
+
+  img {
+    float: left;
+    max-width: 8rem;
+  } */
+
+  body {
+    border-left: none;
+    border-right: none;
+    border-top: 3rem solid #eaa448;
+    border-bottom: 3rem solid #eaa448;
+  }
+
+  nav ul,
+  footer ul {
+    display: flex;
+  }
+
+  nav ul li,
+  footer ul li {
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  #logo-h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  img {
+    display: block;
+  }
+
+  /* section p {
+    padding: 0px 16px;
+  } */
+
+  .pipe {
+    display: inline-block;
+  }
+
+  #normal-p {
+    display: block;
+  }
+
+  #small-p {
+    display: none;
+  }
+
+  #copyright {
+    padding: 28px 0px;
+  }
+}

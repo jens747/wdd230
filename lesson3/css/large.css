@@ -1,0 +1,41 @@
+@media (min-width: 960px) {
+  body {
+    max-width: 960px;
+    margin: 0px auto;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: start;
+  }
+
+  /* img {
+        float: right;
+        max-width: fit-content;
+    } */
+
+  #logo-h1 {
+    min-width: 48rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* align-items: center; */
+    padding-right: 42px;
+  }
+
+  p {
+    max-width: 960px;
+    margin: 0px auto;
+  }
+
+  article section ul {
+    max-width: 920px;
+    margin: 0px auto;
+  }
+
+  section p {
+    text-align: start;
+  }
+}
