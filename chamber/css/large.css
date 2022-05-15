@@ -1,0 +1,159 @@
+@media (min-width: 960px) {
+  body {
+    max-width: 960px;
+    margin: 0px auto;
+    border-left: none;
+    border-right: none;
+    border-top: 3rem solid #eaa448;
+    border-bottom: 3rem solid #eaa448;
+    padding: 1rem;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: start;
+  }
+
+  /* img {
+        float: right;
+        max-width: fit-content;
+    } */
+
+  #logo-h1 {
+    min-width: 48rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* align-items: center; */
+    padding-right: 42px;
+  }
+
+  article section ul {
+    max-width: 920px;
+    margin: 0px auto;
+  }
+
+  /* from med */
+  nav ul {
+    border-top: 2px solid #181c25;
+  }
+
+  .navigation,
+  /* nav ul, */
+  footer ul {
+    display: flex;
+    flex: 1 1 auto;
+    height: 3.8rem;
+  }
+
+  .navigation li {
+    /* nav ul li,
+  footer ul li { */
+    display: block;
+    flex: 1 1 auto;
+    align-self: center;
+  }
+
+  .navigation a {
+    text-align: center;
+    border: none;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li:last-child {
+    position: inherit;
+    display: flex;
+    justify-content: end;
+  }
+
+  .navigation:last-child li a img:hover {
+    box-shadow: 2px 2px 4px darkgrey;
+    /* border: 1px solid #eaa448; */
+    /* transition: box-shadow 0.2s; */
+  }
+
+  .social {
+    padding: 0px;
+    /* height: 3rem;
+    display: flex;
+    justify-content: end;
+    align-items: center; */
+  }
+
+  .social img {
+    padding: 0px;
+    margin-left: 4px;
+    height: 32px;
+    width: auto;
+    /* border-radius: 7px; */
+  }
+
+  .navigation li:nth-of-type(8) {
+    display: flex;
+    justify-content: start;
+  }
+
+  /* section p {
+    padding: 0px 16px;
+  } */
+
+  /* .pipe {
+    display: inline-block;
+  } */
+
+  #normal-p {
+    display: block;
+  }
+
+  #small-p {
+    display: none;
+  }
+
+  /* #copyright {
+    padding: 28px 0px;
+  } */
+
+  /* footer */
+  footer {
+    display: grid;
+  }
+
+  #contactInfo > p {
+    margin: 0px;
+  }
+
+  footer ul {
+    grid-column: 1/4;
+    justify-content: center;
+  }
+
+  footer ul li {
+    padding: 1rem 0.2rem;
+    font-size: 0.8rem;
+  }
+
+  footer ul li:last-child {
+    border-top: 2px solid #181c25;
+  }
+
+  footer ul li:first-child {
+    padding-left: 4rem;
+  }
+
+  footer ul li:last-child {
+    padding-right: 4rem;
+  }
+
+  .footer-li::after {
+    content: " || ";
+  }
+
+  .footer-li:last-child:after {
+    content: none;
+  }
+}

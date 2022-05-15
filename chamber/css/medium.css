@@ -1,0 +1,82 @@
+@media (min-width: 720px) {
+  img {
+    width: 152px;
+  }
+
+  #logo-h1 {
+    display: flex;
+    align-items: center;
+  }
+
+  picture,
+  img {
+    display: block;
+  }
+
+  /* footer */
+  footer {
+    display: grid;
+    align-items: center;
+  }
+
+  #contactPic {
+    grid-column: 1/2;
+  }
+
+  #contactInfo {
+    grid-column: 2/3;
+    display: grid;
+    align-items: end;
+    align-self: center;
+  }
+
+  #contactMap {
+    grid-column: 3/4;
+  }
+
+  h3.contacts {
+    grid-row: 1;
+    text-align: start;
+  }
+
+  #contactInfo > p {
+    text-align: start;
+  }
+
+  footer ul {
+    grid-column: 1/4;
+    display: grid;
+  }
+
+  footer ul li,
+  #copyrightYear {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .contacts {
+    padding: 0px;
+    font-size: 0.8rem;
+  }
+
+  footer ul li:nth-of-type(1) {
+    grid-column: 1/2;
+  }
+
+  footer ul li:nth-of-type(2) {
+    grid-column: 2/3;
+  }
+
+  footer ul li:nth-of-type(3) {
+    grid-column: 3/4;
+  }
+
+  footer ul li:nth-of-type(4) {
+    grid-column: 4/5;
+  }
+
+  footer ul li:nth-of-type(5) {
+    grid-column: 1/5;
+    border-top: 0px;
+  }
+}
