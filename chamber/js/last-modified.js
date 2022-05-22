@@ -83,3 +83,16 @@ const lastModDateTime = document.querySelector("#lastModDateTime");
 
 // Update the lastModified div with the current date
 lastModDateTime.textContent += currentModDateTime;
+
+// Create a variable for the meeting banner
+const meetingBanner = document.querySelector(".meeting-banner");
+
+// Add an event listener to run when the website has loaded
+window.addEventListener("load", () => {
+  // displays the banner on Monday's and Tuesday's
+  if (currentDateAndTime.getDay() < 3 && 
+    currentDateAndTime.getDay() > 0) {
+    // meetingBanner.classList.toggle("show-meeting-banner")
+    meetingBanner.style.display = "block";
+  }
+}, false);
