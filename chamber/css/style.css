@@ -10,8 +10,10 @@ body {
   /* background: #dfe1e2; */
   background: #c9cdcf;
   /* border: 2rem dashed #eaa448; */
-  border-left: 3rem solid #eaa448;
-  border-right: 3rem solid #eaa448;
+  border-left: none;
+  border-right: none;
+  border-top: 3rem solid #eaa448;
+  border-bottom: 3rem solid #eaa448;
   padding: 1rem 0px;
 }
 
@@ -23,7 +25,9 @@ footer {
 } */
 
 footer {
-  background: olivedrab;
+  /* background: olivedrab; */
+  /* background: #384156; */
+  background: rgba(114, 128, 131, 1);
 }
 
 header section {
@@ -76,14 +80,16 @@ header {
 header section:nth-of-type(2) {
   padding: 0px;
   /* background: mediumseagreen; */
-  background: darkolivegreen;
-  background: olivedrab;
+  /* background: darkolivegreen; */
+  /* background: olivedrab; */
+  /* background: #384156; */
+  background: rgba(114, 128, 131, 1);
 }
 
 header h1,
 h3 + h1 {
-  border-bottom: 2px solid #bf0d34;
-  box-shadow: 0px -2px 8px darkgrey;
+  /* border-bottom: 2px solid #bf0d34; */
+  /* box-shadow: 0px -2px 8px darkgrey; */
   background: #f2f8f8;
 }
 
@@ -98,7 +104,7 @@ header section h1 {
     rgba(229, 240, 240, 1) 100%
   );
 
-  background: url(../images/granite_rsz50.jpg);
+  background: url(../images/granite_rsz400.jpg);
 }
 
 header address {
@@ -126,7 +132,7 @@ h1 span {
     rgba(114, 128, 131, 1) 100%
   );
 
-  background: url(../images/sandstone_rsz50.jpg);
+  background: url(../images/sandstone_rsz400.jpg);
   box-shadow: 2px 2px 8px darkgrey;
   color: #eaa448;
   /* background: linear-gradient(343deg, rgba(234,164,72,1) 0%, rgba(249,228,200,1) 35%, rgba(234,164,72,1) 100%); */
@@ -221,6 +227,7 @@ section p {
 }
 
 nav ul li:hover {
+  cursor: pointer;
   background: #728083;
   background: #bf0d34;
   /* background: url(https://images.unsplash.com/photo-1544840280-80e54213dfdc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687); */
@@ -231,14 +238,17 @@ nav ul li:hover {
 
 .social:hover,
 nav ul li:last-child {
+  cursor: pointer;
   /* background: #dfe1e2; */
   background: #c9cdcf;
 }
 
 .navigation li:last-child {
   position: absolute;
-  top: 68px;
-  right: 68px;
+  /* top: 68px;
+  right: 68px; */
+  top: 132px;
+  right: 1rem;
   display: flex;
   justify-content: end;
 }
@@ -250,6 +260,7 @@ nav ul li:last-child {
 }
 
 .navigation:last-child li a img:hover {
+  cursor: pointer;
   box-shadow: 2px 2px 4px darkgrey;
   /* border: 1px solid #eaa448; */
   /* transition: box-shadow 0.2s; */
@@ -283,6 +294,7 @@ a:visited {
 }
 
 a:hover {
+  cursor: pointer;
   color: #f2f8f8;
 }
 
@@ -309,6 +321,7 @@ button {
 }
 
 button:hover {
+  cursor: pointer;
   color: #eaa448;
   background: olivedrab;
   transition: 0.4s;
@@ -406,6 +419,7 @@ main {
   display: grid;
   gap: 1rem;
   font-size: 0.8rem;
+  padding: 1rem 0px;
 }
 
 .placeholder {
@@ -435,7 +449,7 @@ main {
 #hero {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  /* grid-template-rows: repeat(6, 1fr); */
   grid-row: 1;
   overflow: hidden;
   padding: 0px;
@@ -522,7 +536,8 @@ main {
 }
 
 #hero picture,
-#hero img {
+#hero img,
+#hero source {
   padding: 0px;
   object-fit: cover;
   width: 100%;
@@ -541,6 +556,7 @@ main {
   grid-row: 5;
   grid-column: 5/10;
   z-index: 2;
+  /* height: 85%; */
 }
 
 #event {
