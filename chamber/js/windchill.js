@@ -20,35 +20,34 @@ let weatherData = {};
 // }
 
 // *Using the Stormglass API to get current weather status
-fetch(
-  `https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`,
-  {
-    headers: {
-      Authorization:
-        "e186e4f0-dd6e-11ec-bcd6-0242ac130002-e186e55e-dd6e-11ec-bcd6-0242ac130002",
-    },
-  }
-)
-  .then((response) => response.json())
-  .then((jsonData) => {
-    weatherData = jsonData;
-    console.log(weatherData);
+// fetch(
+//   `https://api.stormglass.io/v2/weather/point?lat=${lat}&lng=${lng}&params=${params}`,
+//   {
+//     headers: {
+//       Authorization:
+//         "e186e4f0-dd6e-11ec-bcd6-0242ac130002-e186e55e-dd6e-11ec-bcd6-0242ac130002",
+//     },
+//   }
+// )
+//   .then((response) => response.json())
+//   .then((jsonData) => {
+//     weatherData = jsonData;
+//     console.log(weatherData);
 
-    output(weatherData);
-  });
+//     output(weatherData);
+//   });
 
 // **For debugging without Stormglass API
-// const output = () => {
-
-// *Using the Stormglass API
-const output = (data) => {
+const output = () => {
+  // *Using the Stormglass API
+  // const output = (data) => {
   // **For debugging without Stormglass API
-  // const tempC = 6.96;
-  // const windSpeedMps = 5.73;
+  const tempC = 6.96;
+  const windSpeedMps = 5.73;
 
   // *Using the Stormglass API
-  const windSpeedMps = data.hours[0].windSpeed.noaa;
-  const tempC = data.hours[0].airTemperature.noaa;
+  // const windSpeedMps = data.hours[0].windSpeed.noaa;
+  // const tempC = data.hours[0].airTemperature.noaa;
 
   // const windSpeedKph = windSpeedMpsToKph(windSpeedMps);
   const tempF = tempCtoF(tempC);
@@ -102,4 +101,4 @@ const getWindChill = (mph, temp) => {
 };
 
 // **For debugging without Stormglass API
-// output();
+output();
