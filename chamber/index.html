@@ -35,7 +35,7 @@
         <picture
           ><img
             id="logoImg"
-            src="images/logo/logo_rsz25_lossy80.webp"
+            src="images/logo/logo_lossless80.webp"
             alt="Yellowstone Chamber of Commmerce Logo (A bison)"
         /></picture>
         <h1>
@@ -99,14 +99,14 @@
           srcset="images/banner/sunset_rsz200.jpg 200w, 
           images/banner/sunset_rsz400.jpg 400w, 
           images/banner/sunset_rsz800.jpg 800w" alt="An image of a sunset in Yellowstone National Park"> -->
-          <!-- <img src="images/optimized/wdd230-org.jpg"
-          sizes="50vw"
-          srcset="images/optimized/wdd230-400.jpg 346w, 
+          <img src="images/optimized/wdd230-org.jpg"
+          sizes="(max-width: 959px) 100vw 50vw"
+          srcset="images/optimized/wdd230-400.jpg 400w, 
           images/optimized/wdd230-800.jpg 800w, 
-          images/optimized/wdd230-1200.jpg 380w" alt="An image of a sunset in Yellowstone National Park"> -->
-          <source media="(max-width: 739px)" srcset="images/optimized/wdd230-400.jpg">
+          images/optimized/wdd230-1200.jpg 1200w" alt="An image of a sunset in Yellowstone National Park">
+          <!-- <source media="(max-width: 739px)" srcset="images/optimized/wdd230-400.jpg">
           <source media="(max-width: 959px)" srcset="images/optimized/wdd230-800.jpg">
-          <img src="images/optimized/wdd230-1200.jpg" alt="People in a meeting at a desk.">
+          <img src="images/optimized/wdd230-1200.jpg" alt="People in a meeting at a desk."> -->
         </picture>
         <button>Join the Chamber</button>
       </section>
@@ -158,13 +158,13 @@
           <h4 id="windSpeed">
             Wind Speed: 
             <span>
-              <h4>2.5 km/h</h4>
+              <h4 id="windSpeedH4">2.5 km/h</h4>
             </span>
           </h4>
           <h4 id="windChill">
             Wind Chill: 
             <span>
-              <h4>N/A</h4>
+              <h4 id="windChillH4"></h4>
             </span>
           </h4>
         </div>
@@ -186,7 +186,7 @@
       <picture id="contactPic"
         ><img
           id="contactImg"
-          src="images/logo/logo_rsz25_lossy80.webp"
+          src="images/logo/logo_lossless80.webp"
           alt="Yellowstone Chamber of Commmerce Logo (A bison)"
       /></picture>
       <section id="contactInfo">
