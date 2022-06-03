@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progressive Loading</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <h2>Progressive Loading</h2>
+    <picture>
+      <img src="images/blossoms-300.jpg" alt="blossoms on a tree" />
+    </picture>
+    <picture>
+      <img
+        src="images/trees-300.jpg"
+        alt="silhouette of trees with some fog on a hill"
+      />
+    </picture>
+    <picture>
+      <img
+        class="lazy"
+        src="images/placeholder-300.jpg"
+        data-src="images/red-300.jpg"
+        alt="red trees in fall"
+      />
+    </picture>
+    <picture>
+      <img
+        class="lazy"
+        src="images/placeholder-300.jpg"
+        data-src="images/mountain-300.jpg"
+        alt="an image of a mountain"
+      />
+    </picture>
+    <picture>
+      <img
+        class="lazy"
+        src="images/placeholder-300.jpg"
+        data-src="images/hiker-300.jpg"
+        alt="rear view of a hiker going down a mountain trail"
+      />
+    </picture>
+    <picture>
+      <img
+        class="lazy"
+        src="images/placeholder-300.jpg"
+        data-src="images/deer-300.jpg"
+        alt="deer in a field by some trees"
+      />
+    </picture>
+    <script src="js/lazy-load.js"></script>
+  </body>
+</html>

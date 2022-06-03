@@ -1,0 +1,23 @@
+* {
+  padding: 1rem;
+}
+
+body {
+  display: block;
+  margin: 0px auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+picture {
+  width: 100%;
+}
+
+.lazy[data-src] {
+  filter: blur(0.2em);
+}
+
+.lazy {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
