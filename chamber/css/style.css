@@ -144,7 +144,6 @@ h1 span {
   padding: 0px 42px;
 }
 
-
 #logoImg {
   display: none;
 }
@@ -180,9 +179,21 @@ footer ul li {
   border-top: 2px solid #181c25;
 }
 
+.label,
+.visits {
+  color: #f2f8f8;
+  padding: 0px;
+}
+
 footer ul li {
   border-top: 2px solid #f2f8f8;
   color: #f2f8f8;
+}
+
+footer ul + p {
+  grid-column: 1/4;
+  text-align: center;
+  padding-top: 0px;
 }
 
 .navigation {
@@ -607,4 +618,30 @@ main {
 
 .contacts:first-child {
   color: #bf0d34;
+}
+
+/* Discover Page */
+.discover {
+  padding: 0px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  display: block;
+}
+
+#discover-main {
+  /* display: block; */
+  font-size: 1rem;
+}
+
+/* #discover-article > * {
+  padding: 0px;
+} */
+
+.discover-section {
+  display: block;
+}
+
+.discover-img {
+  width: 100%;
+  /* max-width: 100%; */
 }
