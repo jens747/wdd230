@@ -1,0 +1,67 @@
+* {
+  font-family: Ubuntu, sans-serif;
+  padding: 0.2rem;
+}
+
+div {
+  width: fit-content;
+  box-shadow: 6px 6px 12px cadetblue;
+  padding: 0px;
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+table * {
+  border: 1px solid darkgray;
+}
+
+#acme {
+  font-size: 1.6rem;
+  padding: 0.6rem;
+  background: lightblue;
+}
+
+thead tr:nth-child(2) {
+  background: cadetblue;
+  color: white;
+}
+
+thead tr:nth-child(2) th {
+  padding: 0.4rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: lightgray;
+}
+
+tbody tr:nth-child(even) {
+  background: whitesmoke;
+}
+
+tbody tr:nth-child(4) td:nth-child(3) {
+  color: white;
+  background: cadetblue;
+}
+
+tfoot {
+  background: lightblue;
+  font-size: 0.8rem;
+}
+
+em {
+  border: none;
+}
+
+td {
+  text-align: center;
+  padding: 0.4rem;
+}
+
+@media (max-width: 460px) {
+  table {
+    width: 100%;
+  }
+}
