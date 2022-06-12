@@ -150,4 +150,17 @@
   .discover-img:hover {
     transform: scale(1.2);
   }
+
+  /* ============================================= */
+  /* ===============   Join Page   =============== */
+  /* ============================================= */
+  textarea,
+  .top input {
+    font-size: 1.4rem;
+  }
+
+  .membership {
+    font-size: 1.2rem;
+    height: 2.4rem;
+  }
 }

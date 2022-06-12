@@ -25,7 +25,7 @@ const months = [
   "December",
 ];
 
-// Get new date object
+// Get new date
 const currentDateAndTime = new Date();
 
 // Function to format current time
@@ -56,13 +56,13 @@ const getCurrentTime = (currentDateAndTime) => {
 };
 
 // Variables for day, month, date, year, and time
-const currentDay = weekdays[currentDateAndTime.getDay()];
-const currentMonth = months[currentDateAndTime.getMonth()];
-const currentDayOf = currentDateAndTime.getDate();
-const currentYear = currentDateAndTime.getFullYear();
-const currentTime = getCurrentTime(currentDateAndTime);
-const currentModDateTime = ` ${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear} ${currentTime}`;
-const currentDateTime = `${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear}`;
+let currentDay = weekdays[currentDateAndTime.getDay()];
+let currentMonth = months[currentDateAndTime.getMonth()];
+let currentDayOf = currentDateAndTime.getDate();
+let currentYear = currentDateAndTime.getFullYear();
+let currentTime = getCurrentTime(currentDateAndTime);
+let currentModDateTime = ` ${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear} ${currentTime}`;
+let currentDateTime = `${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear}`;
 
 // Variable used to insert date into webpage
 const copyrightYear = document.querySelector("#copyrightYear");
@@ -96,3 +96,14 @@ window.addEventListener("load", () => {
     meetingBanner.style.display = "block";
   }
 }, false);
+
+function updateTime() {
+  const submitDateTime = new Date();
+  currentDay = weekdays[submitDateTime.getDay()];
+  currentMonth = months[submitDateTime.getMonth()];
+  currentDayOf = submitDateTime.getDate();
+  currentYear = submitDateTime.getFullYear();
+  currentTime = getCurrentTime(submitDateTime);
+  currentModDateTime = ` ${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear} ${currentTime}`;
+  currentDateTime = `${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear}`;
+}

@@ -620,7 +620,9 @@ main {
   color: #bf0d34;
 }
 
-/* Discover Page */
+/* ============================================= */
+/* =============== Discover Page =============== */
+/* ============================================= */
 .discover {
   padding: 0px;
   padding-bottom: 1rem;
@@ -644,4 +646,153 @@ main {
 .discover-img {
   width: 100%;
   /* max-width: 100%; */
+}
+
+/* ============================================= */
+/* ===============   Join Page   =============== */
+/* ============================================= */
+#join-main p {
+  position: relative;
+  justify-self: end;
+  top: 4rem;
+  padding: 0 1rem;
+  padding-right: 2.6rem;
+}
+
+.top {
+  display: grid;
+  font-size: 1.1rem;
+}
+
+.top input {
+  padding: 1rem;
+  height: 4rem;
+  border: none;
+  /* box-shadow: 1px 0px 0.6rem grey; */
+  font-size: 1.8rem;
+}
+
+.top input:active {
+  border: #eaa448;
+}
+
+.top span {
+  padding: 0 1rem;
+}
+
+form label.top input:required {
+  border-top: #bf0d34 solid 0.25rem;
+}
+
+form label.top input:required:valid {
+  border-top: none;
+  border-bottom: olivedrab solid 0.25rem;
+}
+
+#member-benefits,
+.member-benefits {
+  display: none;
+}
+
+.membership {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  height: 3rem;
+}
+
+.membership span {
+  padding: 0 1rem;
+}
+
+fieldset {
+  border: none;
+  box-shadow: 1px 0px 0.6rem grey;
+  background: #dfe1e2;
+  margin: 1rem 0;
+}
+
+legend {
+  margin: 1rem;
+  padding: 1rem;
+  background: #bf0d34;
+  color: #f2f8f8;
+  font-size: 1.4rem;
+}
+
+textarea {
+  border: none;
+  font-size: 1.8rem;
+}
+
+#alert-message {
+  display: none;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #181c25;
+  background: #eaa448;
+  padding: 0.8rem;
+  margin: 1rem;
+  font-weight: bold;
+  border: 0.4rem double;
+}
+
+input[type="radio"]:focus + * {
+  color: #bf0d34;
+}
+
+label > input[type="radio"]:focus ~ span,
+label > input[type="radio"]:checked ~ span {
+  /* border: 1px solid #eaa448;
+  border: 1px solid gold;
+  background: rgba(114, 128, 131, 1); */
+  color: #f2f8f8;
+  color: #bf0d34;
+}
+
+/* Source: https://dev.to/kallmanation/styling-a-radio-button-with-only-css-4llc */
+/* pretty radio */
+label > input[type="radio"] {
+  /* display: none; */
+  width: 0px;
+}
+label > input[type="radio"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.3rem;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: gray;
+}
+label > input[type="radio"]:focus + *,
+label > input[type="radio"]:checked + * {
+  color: #bf0d34;
+}
+label > input[type="radio"]:focus + *::before,
+label > input[type="radio"]:checked + *::before {
+  background: radial-gradient(
+    #bf0d34 0%,
+    #bf0d34 40%,
+    transparent 50%,
+    transparent
+  );
+  border-color: #bf0d34;
+}
+
+#submitBtn {
+  border: none;
+  margin: 1.4rem;
+  padding: 1rem;
+  background: #eaa448;
+  font-size: 1.4rem;
+}
+
+#submitBtn:hover {
+  background: #bf0d34;
+  color: #f2f8f8;
 }
