@@ -1,0 +1,94 @@
+{
+  "businesses": [
+    {
+      "category": "Arts & Culture",
+      "name": "Center for the Arts",
+      "address": "265 S Cache Street, Jackson, WY 83001",
+      "phone": "(307) 734-8956",
+      "fax": "(307) 733-9582",
+      "url": "https://www.jhcenterforthearts.org/",
+      "logo": "https://www.jhcenterforthearts.org/packages/artsy/images/jhca.svg",
+      "member": "non-profit"
+    },
+    {
+      "category": "Food & Drink",
+      "name": "Bubba's BBQ Restaurant",
+      "address": "100 Flat Creek Drive, Jackson, WY  83001",
+      "phone": "(307) 733-2288",
+      "fax": "",
+      "url": "https://bubbasjh.com/",
+      "logo": "https://bubbasjh.com/wp-content/uploads/2019/02/cropped-bubbasguy.png",
+      "member": "gold"
+    },
+    {
+      "category": "Food & Drink",
+      "name": "Mangy Moose Restaurant and Saloon",
+      "address": "Mangy Moose Building, South End of Teton Village, WY 83025",
+      "phone": "(307) 733-4913",
+      "fax": "",
+      "url": "https://www.mangymoose.com/",
+      "logo": "https://static.wixstatic.com/media/3d6745_4d4461df…-horizontal-stacked-moose-logo_standard-color.png",
+      "member": "silver"
+    },
+    {
+      "category": "Financial",
+      "name": "Bank of Jackson Hole",
+      "address": "990 W Broadway, PO Box 7000, Jackson, WY 83002-0077",
+      "phone": "(307) 733-8064",
+      "fax": "(307) 733-0562",
+      "url": "https://bankofjacksonhole.com/",
+      "logo": "https://7yuxj314fpsw3ty2mfgrz3ix-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/bojh-01.svg",
+      "member": "gold"
+    },
+    {
+      "category": "Lodging",
+      "name": "Anvil Hotel",
+      "address": "215 N Cache St, Jackson, WY 83001",
+      "phone": "(307) 733-3668",
+      "fax": "(307) 733-3957",
+      "url": "https://anvilhotel.com/",
+      "logo": "https://www.jacksonholechamber.com/images/made/ima…5e5-6878-4254-a95c-306869f8bfb8_200_200auto_s.jpg",
+      "member": "silver"
+    },
+    {
+      "category": "Lodging",
+      "name": "Flat Creek Ranch",
+      "address": "Upper Flat Creek Road, Bridger-Teton National Forest, Jackson, WY  83002",
+      "phone": "(307) 733-0603",
+      "fax": "(307) 734-7887",
+      "url": "https://www.flatcreekranch.com/",
+      "logo": "https://www.flatcreekranch.com/wp-content/themes/9cloudhotel/images/logo.png",
+      "member": "gold"
+    },
+    {
+      "category": "Shopping",
+      "name": "Fighting Bear Antiques",
+      "address": "375 S Cache St, PO Box 3790, Jackson, WY  83001-3812",
+      "phone": "(307) 733-2669",
+      "fax": "(307) 734-1330",
+      "url": "https://fightingbear.com/",
+      "logo": "https://fightingbear.com/wp-content/uploads/2014/12/logo-300.png",
+      "member": "silver"
+    },
+    {
+      "category": "Tours",
+      "name": "Continental Divide Dog Sled Adventures",
+      "address": "4338 Highway 26, Dubois, WY  82513",
+      "phone": "(307) 851-6539",
+      "fax": "",
+      "url": "https://dogsledadventures.com/",
+      "logo": "https://dogsledadventures.com/wp-content/uploads/2…06/JH-Dog-Sled-Adventures_PrimaryLogo_outline.png",
+      "member": "bronze"
+    },
+    {
+      "category": "Tours",
+      "name": "Buffalo Roam Tours",
+      "address": "PO Box 12894, Jackson, WY  83002",
+      "phone": "(307) 413-0954",
+      "fax": "",
+      "url": "https://buffaloroamtours.com/",
+      "logo": "https://www.jacksonholechamber.com/images/made/ima…54c-1bd0-4731-b231-52bc06bd6f40_200_200auto_s.png",
+      "member": "bronze"
+    }
+  ]
+}

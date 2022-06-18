@@ -796,3 +796,131 @@ label > input[type="radio"]:checked + *::before {
   background: #bf0d34;
   color: #f2f8f8;
 }
+
+/* ============================================= */
+/* ============== Directory Page =============== */
+/* ============================================= */
+/* #dir-main {
+  display: block;
+} */
+
+/* .directory {
+  display: block;
+} */
+
+/* .dir-cards * {
+  padding: 0;
+} */
+
+.dir-cards {
+  background: #dfe1e2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-content: center;
+  box-shadow: 2px 2px 8px darkgray;
+}
+
+.dir-cards section {
+  background: white;
+  text-align: center;
+  margin: 1rem auto;
+  width: 20rem;
+  max-width: 19rem;
+  min-height: 23rem;
+  height: 26rem;
+
+  /* display: grid; */
+  /* padding: 1rem; */
+  /* grid-template-columns: 1fr 4fr; */
+  /* border: 1rem solid #eaa448; */
+
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: baseline; */
+  /* align-content: center; */
+
+  border: 1rem solid #f9e4c8;
+  border-left: 1rem solid #eeb66d;
+  border-right: 1rem solid #eaa448;
+  border-bottom: 1rem solid #ca7c16;
+  box-shadow: 2px 2px 8px darkgray;
+}
+
+.dir-cards section img {
+  max-width: 8rem;
+  grid-column: 1;
+  grid-row: 1/7;
+  align-self: center;
+  padding-right: 1rem;
+}
+
+.dir-name {
+  padding: 0;
+}
+
+.dir-category {
+  padding-top: 0;
+}
+
+.dir-url:hover {
+  color: #728083;
+}
+
+.dir-phone {
+  padding: 1rem;
+}
+
+.dir-member {
+  /* font-weight: bold; */
+  font-size: 1.2rem;
+  /* color: #ca7c16; */
+  padding: .6rem;
+  border: 3px inset;
+  /* background: #bf0d34; */
+  color: #f2f8f8;
+  background: #384156;
+  
+  /* width: inherit; */
+}
+
+.dir-cards section:nth-child(1) p:last-child {
+  top: 1.3rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(6) p:last-child {
+  top: 2.3rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(7) p:last-child {
+  top: 4.34rem;
+  position: relative;
+}
+
+.gold {
+  color: gold;
+}
+
+.silver {
+  color: #c9cdcf;
+}
+
+.bronze {
+  color: darkgoldenrod;
+}
+
+
+/* .dir-name,
+.dir-category,
+.dir-url,
+.dir-addr,
+.dir-phone,
+.dir-member {
+  grid-column: 2;
+} */
+
+/* .dir-url {
+  margin: 1rem;
+} */
