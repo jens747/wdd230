@@ -28,6 +28,7 @@ footer {
   /* background: olivedrab; */
   /* background: #384156; */
   background: rgba(114, 128, 131, 1);
+  background: #384156;
 }
 
 header section {
@@ -84,6 +85,7 @@ header section:nth-of-type(2) {
   /* background: olivedrab; */
   /* background: #384156; */
   background: rgba(114, 128, 131, 1);
+  background: #384156;
 }
 
 header h1,
@@ -784,7 +786,9 @@ label > input[type="radio"]:checked + *::before {
   border-color: #bf0d34;
 }
 
-#submitBtn {
+#submitBtn,
+#grid,
+#list {
   border: none;
   margin: 1.4rem;
   padding: 1rem;
@@ -792,7 +796,9 @@ label > input[type="radio"]:checked + *::before {
   font-size: 1.4rem;
 }
 
-#submitBtn:hover {
+#submitBtn:hover,
+#grid:hover,
+#list:hover {
   background: #bf0d34;
   color: #f2f8f8;
 }
@@ -800,17 +806,80 @@ label > input[type="radio"]:checked + *::before {
 /* ============================================= */
 /* ============== Directory Page =============== */
 /* ============================================= */
-/* #dir-main {
-  display: block;
-} */
+.directory {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  padding-top: 0;
+}
 
-/* .directory {
-  display: block;
-} */
+#grid,
+#list {
+  color: #384156;
+  text-shadow: none;
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.8rem;
+  margin: 0.2rem;
+  width: 40%;
+  place-content: center;
+}
 
-/* .dir-cards * {
+#grid:active,
+#list:active {
+  /* background: #384156; */
+  /* border: 5px solid #ca7c16; */
+  transform: translateY(4px);
+}
+
+#grid:hover div:nth-child(even),
+#grid:hover div:nth-child(odd),
+#list:hover div:nth-child(even),
+#list:hover div:nth-child(odd) {
+  background: #f2f8f8;
+}
+
+#grid div,
+#list div {
   padding: 0;
-} */
+  background: #181c25;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 5px;
+}
+
+#grid div:first-child {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#grid div:nth-child(2) {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#grid div:nth-child(3) {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#grid div:last-child {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+#list div:first-child {
+  grid-row: 1;
+}
+
+#list div:last-child {
+  grid-row: 3;
+}
+
+#list div {
+  width: 36px;
+  height: 8px;
+}
 
 .dir-cards {
   background: #dfe1e2;
@@ -875,27 +944,53 @@ label > input[type="radio"]:checked + *::before {
   /* font-weight: bold; */
   font-size: 1.2rem;
   /* color: #ca7c16; */
-  padding: .6rem;
+  padding: 0.6rem;
   border: 3px inset;
   /* background: #bf0d34; */
   color: #f2f8f8;
   background: #384156;
-  
+
   /* width: inherit; */
 }
 
 .dir-cards section:nth-child(1) p:last-child {
-  top: 1.3rem;
+  top: 4.7rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(2) p:last-child {
+  top: 3.26rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(3) p:last-child {
+  top: 3rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(4) p:last-child {
+  top: 2.91rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(5) p:last-child {
+  top: 1.52rem;
   position: relative;
 }
 
 .dir-cards section:nth-child(6) p:last-child {
-  top: 2.3rem;
+  /* top: 2.3rem; */
+  top: 3.8rem;
   position: relative;
 }
 
 .dir-cards section:nth-child(7) p:last-child {
   top: 4.34rem;
+  position: relative;
+}
+
+.dir-cards section:nth-child(9) p:last-child {
+  top: 1.35rem;
   position: relative;
 }
 
@@ -911,16 +1006,34 @@ label > input[type="radio"]:checked + *::before {
   color: darkgoldenrod;
 }
 
+/* ============================================= */
+/* ========== Directory Page (list) ============ */
+/* ============================================= */
+.directory-list article {
+  display: block;
+}
 
-/* .dir-name,
-.dir-category,
-.dir-url,
-.dir-addr,
-.dir-phone,
-.dir-member {
-  grid-column: 2;
-} */
+.directory-list article section * {
+  text-align: start;
+  padding: 0.1rem 0.2rem;
+}
 
-/* .dir-url {
-  margin: 1rem;
-} */
+.directory-list article section {
+  width: auto;
+  height: auto;
+  max-width: none;
+  min-height: auto;
+  border: none;
+  text-align: start;
+}
+
+.directory-list article section img {
+  display: none;
+}
+
+.directory-list article section:nth-child(even) p:last-child,
+.directory-list article section:nth-child(odd) p:last-child {
+  position: inherit;
+  border: 1px inset;
+  font-size: initial;
+}

@@ -1,6 +1,7 @@
 @media (min-width: 960px) {
   body {
     max-width: 960px;
+    max-width: 1170px;
     margin: 0px auto;
     /* border-left: none;
     border-right: none;
@@ -276,6 +277,10 @@
     grid-row: 1/3;
   }
 
+  .contacts {
+    font-size: 1rem;
+  }
+
   /* ============================================= */
   /* ===============   Join Page   =============== */
   /* ============================================= */
@@ -298,6 +303,7 @@
     text-align: center;
     font-size: 1.2rem;
     background: rgba(114, 128, 131, 1);
+    background: #384156;
     color: #f2f8f8;
     padding: ;
   }
@@ -311,19 +317,27 @@
   }
 
   #span-benefits1 {
-    left: 4.6rem;
+    /* left: 4.6rem; */
+    left: 5.9rem;
+    margin: 0 auto;
   }
 
   #span-benefits2 {
-    left: 6.36rem;
+    /* left: 6.36rem; */
+    left: 7.95rem;
+    margin: 0 auto;
   }
 
   #span-benefits3 {
-    left: 7.2rem;
+    /* left: 7.2rem; */
+    left: 7.9rem;
+    margin: 0 auto;
   }
 
   #span-benefits4 {
-    left: 7.68rem;
+    /* left: 7.68rem; */
+    left: 8.12rem;
+    margin: 0 auto;
   }
 
   .member-benefits:nth-child(2) {
@@ -335,5 +349,23 @@
   /* ============================================= */
   #thanks-main {
     display: block;
+  }
+
+  /* ============================================= */
+  /* ============== Directory Page =============== */
+  /* ============================================= */
+  #dir-main {
+    display: block;
+    padding: 1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #dir-main section {
+    padding: 1rem;
+  }
+
+  .dir-name {
+    text-align: center;
   }
 }

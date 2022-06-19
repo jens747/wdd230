@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/medium.css" />
   <link rel="stylesheet" href="css/large.css" />
 </head>
-<body>
+<body id="dir-body">
   <header>
     <div id="lastModified"></div>
     <section>
@@ -81,8 +81,18 @@
   </header>
   <main id="dir-main">
     <div class="directory">
-      <button id="grid">grid</button>
-      <button id="list">list</button>
+      <!-- <button id="grid">grid</button> -->
+      <button id="grid">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+      <button id="list">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
     </div>
     <article class="dir-cards"></article>
   </main>

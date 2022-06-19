@@ -14,7 +14,7 @@ const fetchJSON = async () => {
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 fetchJSON();
 
@@ -51,8 +51,7 @@ const displayCards = (cardObj) => {
   phone.className = "dir-phone";
 
   member.textContent = `${cardObj.member} member`;
-  member.className = `dir-member ${(cardObj.member).toLowerCase()}`;
-
+  member.className = `dir-member ${cardObj.member.toLowerCase()}`;
 
   card.appendChild(logo);
   card.appendChild(name);
@@ -63,4 +62,16 @@ const displayCards = (cardObj) => {
   card.appendChild(member);
 
   document.querySelector(".dir-cards").appendChild(card);
-}
+};
+
+const gridBtn = document.querySelector("#grid");
+const listBtn = document.querySelector("#list");
+const main = document.querySelector("main");
+
+gridBtn.addEventListener("click", function () {
+  main.classList.remove("directory-list");
+});
+
+listBtn.addEventListener("click", function () {
+  main.classList.add("directory-list");
+});
