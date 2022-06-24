@@ -147,27 +147,32 @@
           Weather
         </h3>
         <div>
-          <picture class="textImg">⛅</picture>
-          <span>
+          <!-- <picture class="textImg">⛅</picture> -->
+          <figure>
+            <img src="" alt="" id="textImg" />
+            <figcaption id="tempConditions"></figcaption>
+          </figure>
+          <!-- <span> -->
             <h4 id="temp">
               33°C
             </h4>
-          </span>
-          <h4 id="tempConditions">Partly Cloudy</h4>
-          <hr>
+          <!-- </span> -->
+          <!-- <h4 id="tempConditions">Partly Cloudy</h4> -->
+          <!-- <hr> -->
           <h4 id="windSpeed">
             Wind Speed: 
-            <span>
+            <!-- <span> -->
               <h4 id="windSpeedH4">2.5 km/h</h4>
-            </span>
+            <!-- </span> -->
           </h4>
           <h4 id="windChill">
             Wind Chill: 
-            <span>
+            <!-- <span> -->
               <h4 id="windChillH4"></h4>
-            </span>
+            <!-- </span> -->
           </h4>
         </div>
+        <hr>
       </section>
       <section id="join" class="placeholder">
         <button>
@@ -229,10 +234,12 @@
         </li>
       </ul>
       <p><span class="label">Number of Visits: </span><span class="visits footer-li"></span></p>
+      <p class="label">Weather data provided by: <a class="label" href="https://openweathermap.org/" target="_blank">openweathermap.org</a></p>
     </footer>
     <script src="js/last-modified.js"></script>
     <script src="js/responsive.js"></script>
-    <script src="js/windchill.js"></script>
+    <!-- <script src="js/windchill.js"></script> -->
+    <script src="js/weatherapi.js"></script>
     <script src="js/visits.js"></script>
   </body>
 </html>

@@ -188,7 +188,7 @@
     font-size: 0.6rem;
   }
 
-  .textImg {
+  #textImg {
     font-size: 2.4rem;
   }
 
@@ -224,6 +224,17 @@
     padding: 0.2rem;
   }
 
+  #windSpeedH4,
+  #windChillH4 {
+    grid-column-start: auto;
+    grid-column: 3/5;
+    text-align: end;
+  }
+
+  #weather div + hr {
+    top: -3rem;
+  }
+
   #join {
     grid-row: 3;
     /* grid-column: 1/2; */
@@ -245,7 +256,9 @@
     margin: 0px;
   } */
 
-  /* Discover Page */
+  /* ============================================= */
+  /* =============   Discover Page   ============= */
+  /* ============================================= */
   #discover-main {
     display: block;
   }
