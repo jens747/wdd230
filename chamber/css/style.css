@@ -7,8 +7,8 @@
 
 body {
   font-size: 16px;
-  /* background: #dfe1e2; */
-  background: #c9cdcf;
+  background: #dfe1e2;
+  /* background: #c9cdcf; */
   /* border: 2rem dashed #eaa448; */
   border-left: none;
   border-right: none;
@@ -59,10 +59,10 @@ h6 {
   font-family: "Merriweather", serif;
   text-align: center;
 }
-
+/* 
 h3 {
   color: #bf0d34;
-}
+} */
 
 p {
   color: #f2f8f8;
@@ -142,7 +142,7 @@ h1 span {
   border-left: 8px dashed #f9e4c8;
   border-right: 8px dashed #f9e4c8;
   border-bottom: 4px solid #ca7c16;
-  text-shadow: 1px 1px 2px darkslategrey;
+  text-shadow: 1px 1px 2px #181c25;
   padding: 0px 42px;
 }
 
@@ -175,6 +175,8 @@ nav ul li a,
 footer ul li {
   display: block;
   /* color: #fff; */
+  color: #bf0d34;
+  text-shadow: none;
   text-align: center;
   padding: 0.75rem;
   text-decoration: none;
@@ -245,15 +247,19 @@ nav ul li:hover {
   background: #bf0d34;
   /* background: url(https://images.unsplash.com/photo-1544840280-80e54213dfdc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687); */
   /* color: #eaa448; */
-  /* color: #f2f8f8; */
   transition: 0.5s;
+}
+
+nav ul li a:hover {
+  color: #f2f8f8;
+  text-shadow: none;
 }
 
 .social:hover,
 nav ul li:last-child {
   cursor: pointer;
-  /* background: #dfe1e2; */
-  background: #c9cdcf;
+  background: #dfe1e2;
+  /* background: #c9cdcf; */
 }
 
 .navigation li:last-child {
@@ -299,29 +305,31 @@ nav ul li:last-child {
 
 a {
   color: #eaa448;
+  color: #f2f8f8;
+  text-shadow: 1px 1px #eaa448;
   text-decoration: none;
 }
 
 a:visited {
-  color: #bf0d34;
+  /* color: #bf0d34; */
+  text-shadow: 1px 1px #bf0d34;
 }
 
 a:hover {
   cursor: pointer;
-  color: #f2f8f8;
+  /* color: #f2f8f8; */
+  /* text-shadow: 1px 1px #f2f8f8; */
+  text-shadow: none;
 }
 
 button {
   border-radius: 0px;
   background: #bf0d34;
   color: #f2f8f8;
-  /* box-shadow: 2px 2px 8px darkgray; */
-  border: 4px solid #eaa448;
-  /* border-left: 8px solid #f9e4c8;
-  border-right: 8px solid #f9e4c8;
-  border-bottom: 4px solid #ca7c16; */
+  /* color: #eaa448; */
+  /* border: 4px solid #eaa448; */
+  border: none;
   font-size: 1.2rem;
-  color: #eaa448;
   font-weight: 800;
   padding: 0.6rem 1rem;
   /* background: linear-gradient(
@@ -330,14 +338,15 @@ button {
     rgba(179, 187, 189, 1) 35%,
     rgba(114, 128, 131, 1) 100%
   ); */
-  text-shadow: 1px 1px 2px darkslategrey;
+  /* text-shadow: 1px 1px 2px #181c25; */
 }
 
 button:hover {
   cursor: pointer;
-  color: #eaa448;
+  color: #181c25;
   background: olivedrab;
-  transition: 0.4s;
+  background: #eaa448;
+  transition: 0.2s;
 }
 
 #color-grid {
@@ -445,6 +454,16 @@ main {
   margin: 0px;
   /* padding: 0px; */
   /* border: 0.6rem solid #f2f8f8; */
+}
+
+.placeholder a {
+  color: #bf0d34;
+  text-shadow: none;
+}
+
+.placeholder a:hover {
+  color:#eaa448;
+  color: #181c25;
 }
 
 .textImg {
@@ -617,10 +636,10 @@ main {
   padding-bottom: 0px;
   color: #f2f8f8;
 }
-
+/* 
 .contacts:first-child {
   color: #bf0d34;
-}
+} */
 
 /* ============================================= */
 /* =============== Discover Page =============== */
@@ -932,8 +951,13 @@ label > input[type="radio"]:checked + *::before {
   padding-top: 0;
 }
 
+.dir-url {
+  color: #bf0d34;
+  text-shadow: none;
+}
+
 .dir-url:hover {
-  color: #728083;
+  color: #181c25;
 }
 
 .dir-phone {
@@ -945,7 +969,7 @@ label > input[type="radio"]:checked + *::before {
   font-size: 1.2rem;
   /* color: #ca7c16; */
   padding: 0.6rem;
-  border: 3px inset;
+  border: 4px inset;
   /* background: #bf0d34; */
   color: #f2f8f8;
   background: #384156;
@@ -995,15 +1019,18 @@ label > input[type="radio"]:checked + *::before {
 }
 
 .gold {
-  color: gold;
+  /* color: gold; */
+  border: 4px inset gold;
 }
 
 .silver {
-  color: #c9cdcf;
+  /* color: #c9cdcf; */
+  border: 4px inset #c9cdcf;
 }
 
 .bronze {
-  color: darkgoldenrod;
+  /* color: darkgoldenrod; */
+  border: 4px inset darkgoldenrod;
 }
 
 /* ============================================= */
