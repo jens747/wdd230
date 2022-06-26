@@ -4,41 +4,675 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>
+      A brief introduction about a selection of JavaScript Array Methods
+      (functions). The methods covered include filter, forEach, map, reduce, and
+      sort.
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dekko&family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <h1>JavaScript Array Methods</h1>
     <section id="map" class="show-section">
       <h2>Array.map();</h2>
+      <p>
+        The array.map() method is used to change the elements in an array in a
+        way specified by the user, and returns a new array with the updated
+        elements.
+      </p>
+      <p>
+        Map takes 2 arguments, only the first is required, it can be an
+        expression or a function that returns a value, which is added to the new
+        array.
+      </p>
+      <p>Don't use map if:</p>
+      <ul>
+        <li>Your callback function doesn't return a value.</li>
+        <li>You don't need to return an array.</li>
+        <li>Use forEach() instead.</li>
+      </ul>
+
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">map</span>(<span class="functionco">callback</span>[,<span class="declareco">contextObject</span>]);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <ul>
+        <li><u>currentElement</u>: element that is passed in from the array</li>
+        <li><u>index</u>: the current index of the currentElement</li>
+        <li><u>array</u>: the original array that is passed through map</li>
+      </ul>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">currentElement, index, array</span>) {...}
+        </pre>
+      </code>
+      <h3>Examples:</h3>
+      <button class="expand" aria-label="a button used to expand map example 1">
+        Using Array.map() to get the square root.
+      </button>
+      <code class="hide expandable">
+        <pre>
+        <span class="declareco">let</span> numArray = [<span class="input" role="textbox" contenteditable></span>];
+        <!-- [<input class="map-input" type="text" placeholder="add array">]; -->
+
+        <span class="declareco">const</span> getSqrt = numArray.<span class="functionco">map</span>((num) => <span class="classco">Math</span>.<span class="functionco">sqrt</span>(num));
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button class="expand" aria-label="a button used to expand map example 2">
+        Calling map() with a user defined function to convert Fahrenheit to
+        Celsius.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> tempsArray = [<span class="input" role="textbox" contenteditable></span>];
+          <!-- tempsArray = [<input class="map-input" type="text" placeholder="add array">]; -->
+
+          <span class="declareco">function</span> <span class="functionco">convertToC</span>(fahr) {
+            <span class="declareco">let</span> cel = (fahr - <span class="numberco">32</span>) / <span class="numberco">1.8</span>;
+
+            <span class="declareco">return</span> cel.<span class="functionco">toFixed</span>(<span class="numberco">2</span>);
+          }
+
+          <span class="declareco">let</span> celsius = tempsArray.<span class="functionco">map</span>(<span class="functionco">convertToC</span>);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button class="expand" aria-label="a button used to expand map example 3">
+        Using index and anonymous functions.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> skipArray = [<span class="input" role="textbox" contenteditable></span>];
+
+          <span class="declareco">const</span> skipNum = skipArray.<span class="functionco">map</span>((num) => {
+            <span class="declareco">let</span> temp = (num * <span class="numberco">1.8</span> + <span class="numberco">32</span>).<span class="functionco">toFixed</span>(<span class="numberco">2</span>);
+
+            <span class="declareco">if</span> (temp <= <span class="numberco">85</span> && temp >= <span class="numberco">65</span>) {
+              <span class="declareco">return</span> temp;
+            }
+
+            <span class="declareco">return</span> <span class="stringco">"N/A"</span>;
+          });
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
     <section id="filter">
       <h2>Array.filter();</h2>
+      <p>
+        Array.filter() takes an array and returns a filtered array based on a
+        condition provided by the user.
+      </p>
+      <p>
+        Almost identical to map, filter takes 2 arguments, only the first, which
+        is a callback function, is required.
+      </p>
+      <p>
+        If you want to filter the array and make changes to it at the same time,
+        map() may be a better option.
+      </p>
+
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">filter</span>(<span class="functionco">callback</span>,<span class="declareco">contextObject</span>);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <ul>
+        <li><u>currentElement</u>: element that is passed in from the array</li>
+        <li><u>index</u>: the current index of the currentElement</li>
+        <li><u>array</u>: the original array that is passed through filter</li>
+      </ul>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">currentElement, index, array</span>) {...}
+        </pre>
+      </code>
+      <h3>Examples:</h3>
+      <button
+        class="expand"
+        aria-label="a button used to expand filter example 1"
+      >
+        Filtering an array with filter().
+      </button>
+      <code class="hide expandable">
+        <pre>
+        <span class="declareco">let</span> unfilteredArray = [<span class="input" role="textbox" contenteditable></span>];
+        <!-- [<input class="map-input" type="text" placeholder="add array">]; -->
+
+        <span class="declareco">let</span> filterArray = unfilteredArray.<span class="functionco">filter</span>((num) => num > <span class="numberco">75</span>);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand filter example 2"
+      >
+        Filtering an array of Objects.
+      </button>
+      <code class="hide expandable">
+        <pre>
+        <span class="declareco">let</span> employees = [
+          { <span class="declareco">name</span>: <span class="stringco">"Bob"</span>, <span class="declareco">sold</span>: <span class="numberco">306</span> },
+          { <span class="declareco">name</span>: <span class="stringco">"Sally"</span>, <span class="declareco">sold</span>: <span class="numberco">472</span> },
+          { <span class="declareco">name</span>: <span class="stringco">"Joey"</span>, <span class="declareco">sold</span>: <span class="numberco">193</span> },
+          { <span class="declareco">name</span>: <span class="stringco">"Rupert"</span>, <span class="declareco">sold</span>: <span class="numberco">388</span> },
+          {<span class="input" role="textbox" contenteditable></span>}
+        ];
+        <!-- [<input class="map-input" type="text" placeholder="add array">]; -->
+
+        // Finding top sellers with for loop
+        <span class="declareco">let</span> topSellers = [];
+
+        <span class="declareco">for</span> (<span class="declareco">let</span> i = <span class="numberco">0</span>; i < employees.<span class="functionco">length</span>; i++) {
+          <span class="declareco">if</span> (employees[i].<span class="declareco">sold</span> > <span class="numberco">300</span>) {
+            topSellers.<span class="functionco">push</span>(employees[i]);
+          }
+        }
+ 
+        // Finding top sellers using filter
+        <span class="declareco">let</span> filterTopSellers = employees.<span class="functionco">filter</span>(<span class="declareco">function</span> (merch) {
+          <span class="declareco">return</span> merch.<span class="declareco">sold</span> > <span class="numberco">300</span>;
+        });
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
     <section id="reduce">
       <h2>Array.reduce();</h2>
+      <p>
+        Array.reduce() takes an array and condenses it to a single value after
+        performing a requested operation.
+      </p>
+      <p>
+        Reduce() has 2 arguments, the callback function and an optional
+        initialValue.
+      </p>
+      <p>
+        Any updates made to the array after iteration begins will not be counted
+        by reduce (i.e.: append).
+      </p>
+      <p>
+        Items that are deleted from the array before their turn in the sequence
+        will not be counted by reduce().
+      </p>
+
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">reduce</span>(<span class="functionco">callback</span>[,<span class="declareco">initialValue</span>]);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <ul>
+        <li>
+          <u>initialValue</u>: if supplied, this is the value that is iterated
+          over by reduce()
+        </li>
+        <li>
+          <u>previousValue (prev)</u>: value at array[0] by default, but can be
+          supplied by user
+        </li>
+        <li>
+          <u>currentValue (current)</u>: value at array[0] if user supplies
+          initialValue, otherwise value at array[1]
+        </li>
+        <li><u>index</u>: the current index of the currentElement</li>
+        <li><u>array</u>: the original array that will be reduced</li>
+      </ul>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">prev, current, index, array</span>) {...}
+        </pre>
+      </code>
+      <h3>Examples:</h3>
+      <button
+        class="expand"
+        aria-label="a button used to expand reduce example 1"
+      >
+        Using reduce() on an array to find the smallest number.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> reduceNums = [<span class="input" role="textbox" contenteditable></span>];
+
+          <span class="declareco">let</span> smallestNum = (a, b) => <span class="classco">Math</span>.<span class="functionco">min</span>(a, b);
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(nums.<span class="functionco">reduce</span>(smallestNum));
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand reduce example 2"
+      >
+        Using reduce() on an array of Objects.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> purchasedItems = [
+            {
+              <span class="declareco">name</span>: <span class="stringco">"apple"</span>,
+              <span class="declareco">price</span>: <span class="numberco">0.49</span>,
+              <span class="declareco">qty</span>: <span class="numberco">5</span>,
+            },
+            {
+              <span class="declareco">name</span>: <span class="stringco">"orange"</span>,
+              <span class="declareco">price</span>: <span class="numberco">0.99</span>,
+              <span class="declareco">qty</span>: <span class="numberco">4</span>,
+            },
+            {
+              <span class="declareco">name</span>: <span class="stringco">"banana"</span>,
+              <span class="declareco">price</span>: <span class="numberco">1.49</span>,
+              <span class="declareco">qty</span>: <span class="numberco">2</span>,
+            },
+          ];
+
+          <!-- let tax = 0.035; -->
+          <span class="declareco">let</span> tax = <span class="input" role="textbox" contenteditable></span>;
+
+          /* initialValue is required when iterating over 
+          Objects, otherwise reduce uses the first object 
+          as the inital value & returns an error */
+          <span class="declareco">let</span> totalCost = 
+            purchasedItems.<span class="functionco">reduce</span>((previous, current) => {
+              <span class="declareco">return</span> previous + current.<span class="declareco">qty</span> * 
+              (current.<span class="declareco">price</span> + current.<span class="declareco">price</span> * tax);
+            }, <span class="numberco">0</span>);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
     <section id="every">
       <h2>Array.every();</h2>
+      <p>
+        The every() method is used to check to see if all elements in an array
+        meet a certain condition. If they do, it returns true, if not it returns
+        false.
+      </p>
+      <p>
+        Every() does not change the original array and it does not return an
+        updated array.
+      </p>
+      <p>
+        Like other Array methods every() takes a mandatory callback function and
+        the optional thisArg, which allows thisArg to reference itself from
+        inside the callback function with the "this" value.
+      </p>
+      <p>
+        The callback syntax is similar to map() and filter(), accepting three
+        arguments, the current element, the index, and the array itself.
+      </p>
+      <p>
+        When called, every() will run until it returns a false (falsy) value or
+        reaches the end of the array.
+      </p>
+
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">every</span>(<span class="functionco">callback</span>[,<span class="declareco">thisArg</span>]);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">currentElement, index, array</span>) {...}
+        </pre>
+      </code>
+      <h2>Array.some();</h2>
+      <p>
+        Array.some() is similar to every(); however, it checks to see if at
+        least one item in the array meets the condition, if so, it returns true.
+      </p>
+      <p>
+        The some() method determines the range of elements to be checked before
+        running, so it will not check any elements that are added after it is
+        invoked.
+      </p>
+      <p>
+        When called, some() will run until it returns a true (truthy) value, or
+        reaches the end of the array.
+      </p>
+      <p>If some() is called on an empty array it will always return false.</p>
+
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">some</span>(<span class="functionco">callback</span>[,<span class="declareco">thisArg</span>]);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">currentElement[[, index], array]</span>) {...}
+        </pre>
+      </code>
     </section>
     <section id="some">
-      <h2>Array.some();</h2>
+      <h2>Array.every(); and Array.some(); continued...</h2>
+      <h3>Examples:</h3>
+      <button
+        class="expand"
+        aria-label="a button used to expand every and some example 1"
+      >
+        Using every() & some() methods with an arrow function.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> allPos = [<span class="numberco">1</span>, <span class="numberco">13</span>, <span class="numberco">4</span>, <span class="numberco">75</span>, <span class="numberco">8</span>, <span class="numberco">629</span>, <span class="numberco">2</span>];
+          <span class="declareco">let</span> oneLess = [<span class="input" role="textbox" contenteditable></span>];
+
+          // every
+          <span class="declareco">const</span> everyA = allPos.<span class="functionco">every</span>((number) => number > <span class="numberco">0</span>); 
+          // returns true
+          <span class="declareco">const</span> everyB = oneLess.<span class="functionco">every</span>((number) => number > <span class="numberco">0</span>); 
+          // returns false
+
+          // some
+          <span class="declareco">const</span> someA = allPos.<span class="functionco">some</span>((number) => number > <span class="numberco">0</span>); 
+          // returns true
+          <span class="declareco">const</span> someB = oneLess.<span class="functionco">some</span>((number) => number > <span class="numberco">0</span>); 
+          // returns true
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand every and some example 2"
+      >
+        Checking to see if elements of one array exist within another.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">const</span> <span class="functionco">isIncluded</span> = (set1, set2) 
+            => set2.<span class="functionco">every</span>((item) 
+            => set1.<span class="functionco">includes</span>(item));
+
+          // Works on all types of data
+          <span class="classco">console</span>.<span class="functionco">log</span>(
+            <span class="functionco">isIncluded</span>(
+              [<span class="numberco">6</span>, <span class="numberco">20</span>, <span class="numberco">5</span>, <span class="numberco">77</span>, <span class="numberco">22</span>, <span class="numberco">3</span>, <span class="numberco">12</span>, <span class="numberco">9</span>], 
+              [<span class="numberco">6</span>, <span class="numberco">20</span>, <span class="numberco">22</span>]
+            )
+          ); // true
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(<span class="stringco">"Every results: "</span>);
+          <span class="classco">console</span>.<span class="functionco">log</span>(
+            <span class="functionco">isIncluded</span>(
+              [<span class="stringco">"a"</span>, <span class="stringco">"b"</span>, <span class="stringco">"c"</span>, <span class="stringco">"d"</span>, <span class="stringco">"e"</span>, <span class="stringco">"f"</span>],
+              [<span class="stringco">"e"</span>, <span class="stringco">"a"</span>, <span class="stringco">"d"</span>]
+            )
+          ); // true
+          <span class="classco">console</span>.<span class="functionco">log</span>(
+            <span class="functionco">isIncluded</span>(
+              [<span class="stringco">"a"</span>, <span class="stringco">"b"</span>, <span class="stringco">"c"</span>, <span class="stringco">"d"</span>, <span class="stringco">"e"</span>, <span class="stringco">"f"</span>], 
+              [<span class="stringco">"f"</span>, <span class="stringco">"h"</span>, <span class="stringco">"g"</span>]
+            )
+          ); // false
+
+          <span class="declareco">const</span> <span class="functionco">includedOnce</span> = (set1, set2) 
+            => set2.<span class="functionco">some</span>((item) 
+            => set1.<span class="functionco">includes</span>(item));
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(<span class="stringco">"Some results: "</span>);
+          <span class="classco">console</span>.<span class="functionco">log</span>(
+            <span class="functionco">includedOnce</span>(
+              [<span class="stringco">"a"</span>, <span class="stringco">"b"</span>, <span class="stringco">"c"</span>, <span class="stringco">"d"</span>, <span class="stringco">"e"</span>, <span class="stringco">"f"</span>], 
+              [<span class="stringco">"e"</span>, <span class="stringco">"a"</span>, <span class="stringco">"d"</span>]
+            )
+          ); // true
+          <span class="classco">console</span>.<span class="functionco">log</span>(
+            <span class="functionco">includedOnce</span>(
+              [<span class="stringco">"a"</span>, <span class="stringco">"b"</span>, <span class="stringco">"c"</span>, <span class="stringco">"d"</span>, <span class="stringco">"e"</span>, <span class="stringco">"f"</span>], 
+              [<span class="stringco">"f"</span>, <span class="stringco">"h"</span>, <span class="stringco">"g"</span>]
+            )
+          ); // true
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand every and some example 3"
+      >
+        Checking a range with some() and this.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <!-- let scores = [<span class="input" role="textbox" contenteditable></span>]; -->
+          <span class="declareco">let</span> scores = [<span class="numberco">84</span>, <span class="numberco">95</span>, <span class="numberco">87</span>, <span class="numberco">79</span>, <span class="numberco">91</span>];
+
+          <span class="declareco">const</span> rangeA = {
+            <span class="declareco">min</span>: <span class="numberco">94</span>,
+            <span class="declareco">max</span>: <span class="numberco">100</span>,
+          };
+
+          <span class="declareco">let</span> letterGrade = scores.<span class="functionco">some</span>(<span class="declareco">function</span> (grade) {
+            <span class="declareco">return</span> grade >= <span class="classco">this</span>.<span class="declareco">min</span> && grade <= <span class="classco">this</span>.<span class="declareco">max</span>;
+          }, rangeA);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
     <section id="sort">
       <h2>Array.sort();</h2>
+      <p>
+        The sort() method takes the elements of an array and sorts them in
+        ascending order based on UTF-16 code values.
+      </p>
+      <p>
+        Unlike the other methods we've covered sort() does not make a new sorted
+        array, instead it sorts and updates the current array.
+      </p>
+      <p>Sort() takes an optional compare function.</p>
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">sort</span>(<span class="declareco">compareFunction</span>);
+        </pre>
+      </code>
+      <p>
+        The compare() function takes two arguments, sort order is determined by
+        what compare returns:
+      </p>
+      <ul>
+        <li>If compare(a, b) < 0; a is listed before b</li>
+        <li>If compare(a, b) > 0; b is listed before a</li>
+        <li>If compare(a, b) === 0; the order remains unchanged</li>
+      </ul>
+      <p>
+        Essentially, if the compare function is not provided, all values are
+        converted to strings and sorted by string comparison. So, ['b', 'e',
+        'd', 'c', 'a'] becomes ['a', 'b', 'c', 'd', 'e'] and [3, 5, 1, 30, 11]
+        becomes ["1", "11", "3", "30", "5"].
+      </p>
+      <p>
+        If you have to sort words with non-ASCII special characters like é, è,
+        etc., you can use the localeCompare() function.
+      </p>
+      <h3>Compare() Syntax:</h3>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">compare</span>(<span class="stringco">a, b</span>) {...}
+        </pre>
+      </code>
+      <h3>Examples:</h3>
+      <button
+        class="expand"
+        aria-label="a button used to expand sort example 1"
+      >
+        Using the sort method.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> letters = [<span class="stringco">'b'</span>, <span class="stringco">'e'</span>, <span class="stringco">'d'</span>, <span class="stringco">'c'</span>, <span class="stringco">'a'</span>];
+          <span class="declareco">let</span> numbers = [<span class="numberco">3</span>, <span class="numberco">5</span>, <span class="numberco">1</span>, <span class="numberco">30</span>, <span class="numberco">11</span>];
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(letters.<span class="functionco">sort</span>());   
+          // returns ['a', 'b', 'c', 'd', 'e']
+          <span class="classco">console</span>.<span class="functionco">log</span>(numbers.<span class="functionco">sort</span>());   
+          // returns [1, 11, 3, 30, 5]
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand sort example 2"
+      >
+        Sorting numbers correctly in ascending order.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">function</span> sortNumbers(a, b) {
+            <span class="declareco">return</span> a - b;
+          }
+
+          <span class="declareco">const</span> ascendingNums = numbers.<span class="functionco">sort</span>(sortNumbers);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand sort example 3"
+      >
+        Sorting numbers in descending order.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">function</span> desendingOrder(a, b) {
+            <span class="declareco">if</span> (a > b)
+              <span class="declareco">return</span> <span class="numberco">-1</span>;
+            <span class="declareco">if</span> (a < b)
+              <span class="declareco">return</span> <span class="numberco">1</span>;
+            <span class="declareco">return</span> <span class="numberco">0</span>;
+          }
+
+          <span class="declareco">const</span> descendingNums = numbers.<span class="functionco">sort</span>(desendingOrder);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
+      <button
+        class="expand"
+        aria-label="a button used to expand sort example 3"
+      >
+        Using localeCompare to sort special characters.
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">let</span> cities = [
+            <span class="stringco">"Pessac"</span>, 
+            <span class="stringco">"Marseille"</span>, 
+            <span class="stringco">"Ribeauvillé"</span>, 
+            <span class="stringco">"Périgueux"</span>, 
+            <span class="stringco">"Saint-Lô"</span>
+          ];
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(cities.<span class="functionco">sort</span>()); // Leaves cities out of order
+
+          cities.<span class="functionco">sort</span>((a, b) => {
+            <span class="declareco">return</span> a.<span class="functionco">localeCompare</span>(b);
+          });
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(`Sorted by locale: ${<cities class="span functionco">join</cities>(<span class="stringco">", "</span>)}`);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
     <section id="forEach">
       <h2>Array.forEach();</h2>
+      <p>
+        The forEach() method is used to run a function on each element of an
+        array.
+      </p>
+      <p>
+        Unlike map() and reduce(), forEach() cannot be chained and always
+        returns undefined.
+      </p>
+      <p>
+        forEach() cannot be used with break, continue, or asynchronous commands
+        like promises and async/await.
+      </p>
+      <p>
+        forEach() does not modify the array on which it is called, but the array
+        can be altered by the callback function.
+      </p>
+      <h3>Syntax:</h3>
+      <code>
+        <pre>
+          <span class="classco">arrayObject</span>.<span class="functionco">forEach</span>(<span class="functionco">callback</span>[,<span class="declareco">thisArg</span>]);
+        </pre>
+      </code>
+      <h3>Callback Syntax:</h3>
+      <ul>
+        <li><u>currentElement</u>: element that is passed in from the array</li>
+        <li><u>index</u>: the current index of the currentElement</li>
+        <li><u>array</u>: the original array that is passed through map</li>
+      </ul>
+      <code>
+        <pre>
+          <span class="declareco">function</span> <span class="functionco">callback</span>(<span class="stringco">currentElement, index, array</span>) {...}
+        </pre>
+      </code>
+      <h3>Examples:</h3>
+      <button
+        class="expand"
+        aria-label="a button used to expand sort example 1"
+      >
+        Adding file extensions with forEach().
+      </button>
+      <code class="hide expandable">
+        <pre>
+          <span class="declareco">const</span> songs = [<span class="stringco">"song1"</span>, <span class="stringco">"song2"</span>, <span class="stringco">"song3"</span>, <span class="stringco">"song4"</span>, <span class="stringco">"song5"</span>];
+
+          <span class="declareco">let</span> forExt = [];
+          <span class="declareco">let</span> forEachExt = [];
+
+          for (<span class="declareco">let</span> i = <span class="numberco">0</span>; i < songs.<span class="functionco">length</span>; i++) {
+            forExt.<span class="functionco">push</span>(` ${songs[i]}.mp3`);
+          }
+
+          songs.<span class="functionco">forEach</span>((item) => {
+            forEachExt.<span class="functionco">push</span>(` ${item}.mp3`);
+          });
+
+          <span class="classco">console</span>.<span class="functionco">log</span>(songs);
+          <span class="classco">console</span>.<span class="functionco">log</span>(`For loop:${forExt}`);
+          <span class="classco">console</span>.<span class="functionco">log</span>(`forEach:${forEachExt}`);
+        </pre>
+      </code>
+      <div class="map-examples"></div>
     </section>
 
     <button id="nextButton">Next Section</button>
+    <footer>
+      <ul>
+        <li>Joel Jensen</li>
+        <li>BYU-Idaho</li>
+        <li>WDD 230</li>
+        <li>&copy; <span id="copyrightYear"></span></li>
+      </ul>
+      <span>Last Modified:</span>
+      <div id="lastModified"></div>
+    </footer>
+    <script src="js/last-modified.js"></script>
     <!-- <script src="arrayMethods.js"></script> -->
     <script src="js/script.js"></script>
     <script src="js/map.js"></script>
-    <script src="js/filter.js"></script>
-    <script src="js/reduce.js"></script>
-    <script src="js/everyAndSome.js"></script>
-    <script src="js/sort.js"></script>
-    <script src="js/forEach.js"></script>
+    <!-- <script src="js/filter.js"></script> -->
+    <!-- <script src="js/reduce.js"></script> -->
+    <!-- <script src="js/everyAndSome.js"></script> -->
+    <!-- <script src="js/sort.js"></script> -->
+    <!-- <script src="js/forEach.js"></script> -->
   </body>
 </html>

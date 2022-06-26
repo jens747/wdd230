@@ -1,40 +1,26 @@
+// Select all sections and next button
 const allSections = document.querySelectorAll("section");
 const nextBtn = document.querySelector("#nextButton");
 
-// const sectionObj =  {
-//   currentSection: 0,
-//   nextSection: 1
-// }
-
-// let CURRENT = sectionObj.currentSection;
-// let NEXT = sectionObj.nextSection;
+// Values for current and next slide
 let CURRENT = 0;
 let NEXT = 0;
-// let currentSection = 0;
-// let nextSection = 1;
 
+// Add event to advance slide
 nextBtn.addEventListener("click", advanceSection);
 
+// Advance the slides
 function advanceSection() {
-  if (CURRENT < allSections.length - 1) {
-    console.log("lt");
-    NEXT = CURRENT + 1;
-  } else {
-    console.log("gt");
-    NEXT = CURRENT;
-    CURRENT = 0;
-  }
-  
-  console.log(`Current: ${CURRENT}, Next: ${NEXT}`);
+  // If current slide reaches end of array, reset next slide, otherwise set next slide to index after current slide.
+  CURRENT < allSections.length - 1 ? (NEXT = CURRENT + 1) : (NEXT = 0);
+
+  // Hide current slide, show next slide
   allSections[CURRENT].classList.toggle("show-section");
   allSections[NEXT].classList.toggle("show-section");
-  CURRENT++;
-  // sectionObj.currentSection = CURRENT;
-  // sectionObj.nextSection = NEXT;
-  
-  // console.log(`Current: ${sectionObj.currentSection}, Next: ${sectionObj.nextSection}`);
-}
 
-function updateNext(next) {
-  return next + 1;
+  // Increment current slide
+  CURRENT++;
+
+  // Reset current slide if exceeds slide array index
+  if (CURRENT > allSections.length - 1) CURRENT = 0;
 }
