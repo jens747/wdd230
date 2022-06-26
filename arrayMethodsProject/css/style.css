@@ -125,7 +125,6 @@ input {
   color: var(--greenco);
   font-family: monospace;
   font-size: 1rem;
-  width: ;
 }
 
 .input {
@@ -163,7 +162,7 @@ footer ul {
 }
 
 footer ul li {
-  box-shadow: 0 4px solid var(--bg-color);
+  box-shadow: 0 4px var(--bg-color);
 }
 
 footer span {
