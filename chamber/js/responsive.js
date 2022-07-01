@@ -1,5 +1,5 @@
 const menuBtn = document.querySelector('.menuButton');
-const headerNav = document.querySelector('.navigation')
+const headerNav = document.querySelector('.navigation');
 
 menuBtn.addEventListener('click', () => {headerNav.classList.toggle('responsive')}, false);
 

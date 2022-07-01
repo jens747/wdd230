@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <title>
-    Thank you for joining the Yellowstone Chamber of Commerce
+    Thank you for submitting your information to the Yellowstone Chamber of Commerse.
   </title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta
     name="description"
-    content="This is the join page for the Yellowstone Chamber of Commerce."
+    content="Thank you for submitting your form. A representative of the Yellowstone Chamber of Commerce will soon contact you with more information."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -31,21 +31,24 @@
   <header>
     <div id="lastModified"></div>
     <section>
-      <picture
-        ><img
-          id="logoImg"
-          src="images/logo/logo_lossless80.webp"
-          alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-      /></picture>
+      <a class="logo-a" href="index.html">
+        <picture>
+          <img
+            id="logoImg"
+            src="images/logo/logo_lossless80.webp"
+            alt="Yellowstone Chamber of Commmerce Logo (A bison)"
+          />
+        </picture>
+      </a>
       <h1>
         Welcome to<br />
         <span>Yellowstone</span><br />
         Chamber of Commerce
       </h1>
     </section>
-    <article class="meeting-banner">
+    <div class="meeting-banner">
       <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </article>
+    </div>
     <nav>
       <ul class="navigation">
         <li><a class="menuButton" href="#"> Menu</a></li>
@@ -53,7 +56,7 @@
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li>
           <a class="social" href="https://www.facebook.com/" target="_blank"
             ><img
@@ -71,35 +74,38 @@
       </ul>
     </nav>
     <section>
-      <p>Add us to your bookmarks: 
-        <address>
-          <a href="#">yellowstonechamber.com</a>
-        </address>
-      </p>
+      <h4>Add us to your bookmarks: </h4>
+      <address>
+        <a class="anchor-btn" href="index.html">yellowstonechamber.com</a>
+      </address>
     </section>
   </header>
 
     <!-- CONTENT HERE -->
     <main id="thanks-main">
-      <h1>Thank you for joining the Yellowstone Chamber of Commerce!</h1>
+      <!-- <h1>Thank you for joining the Yellowstone Chamber of Commerce!</h1> -->
+      <h1>Thank you for providing your information!</h1>
       <h3>
-        <a class="" href="index.html">Go back to home page.</a>
+        <a class="thanks-btn" href="index.html">Go back to home page.</a>
       </h3>
     </main>
 
 <footer>
-    <picture id="contactPic"
-      ><img
+  <a class="logo-a" href="index.html">
+    <picture id="contactPic">
+      <img
         id="contactImg"
         src="images/logo/logo_lossless80.webp"
         alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-    /></picture>
+      />
+  </picture>
+  </a>
     <section id="contactInfo">
       <h3 class="contacts">Yellowstone Chamber of Commerce</h3>
       <p class="contacts">104 Yellowstone Ave</p>
       <p class="contacts">West Yellowstone, MT 59758</p>
     </section>
-    <section id="contactMap">
+    <div id="contactMap">
       <p class="contacts">
         <!-- <address> -->
           <a href="#">info@yellowstonechamber.com</a>
@@ -112,7 +118,7 @@
           >📍 Where to find us</a
         >
       </p>
-    </section>
+    </div>
     <ul>
       <li id="copyright" class="footer-li">
         &copy;

@@ -163,11 +163,17 @@
     grid-template-rows: repeat(5, 20%);
   }
 
-  #hero button {
+  #hero a {
+    grid-row: 5;
+    grid-column: 5/11;
+    z-index: 2;
+  }
+  #hero button,
+  #hero-button {
     grid-row: 5;
     grid-column: 5/10;
-    height: 75%;
-    padding: 0.7rem;
+    height: 54%;
+    margin-top: 1rem;
   }
 
   #container {
@@ -188,7 +194,7 @@
     font-size: 0.6rem;
   }
 
-  #textImg {
+  .textImg {
     font-size: 2.4rem;
   }
 
@@ -379,5 +385,24 @@
 
   .dir-name {
     text-align: center;
+  }
+  
+  /* ============================================= */
+  /* =============== Contact Page ================ */
+  /* ============================================= */
+  /* .contact-section {
+    border: none;
+    box-shadow: 1px 0px 0.6rem grey;
+    background: #dfe1e2;
+    margin: 1rem 0;
+    display: block;
+  } */
+  #contact-main {
+    display: block;
+  }
+
+  .required-p {
+    float: right;
+    top: 2rem;
   }
 }

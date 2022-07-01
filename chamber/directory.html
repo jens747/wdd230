@@ -5,11 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Welcome to the Join page of the Yellowstone Chamber of Commerce!
+    This page contains the directory for the businesses and organizations that are members of the Yellowstone Chamber of Commerce!
   </title>
   <meta
     name="description"
-    content="This is the join page for the Yellowstone Chamber of Commerce."
+    content="This page contains contact information, such as location, website, and phone number, for the members of the Yellowstone Chamber of Commerce."
   />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,21 +32,24 @@
   <header>
     <div id="lastModified"></div>
     <section>
-      <picture
-        ><img
-          id="logoImg"
-          src="images/logo/logo_lossless80.webp"
-          alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-      /></picture>
+      <a class="logo-a" href="index.html">
+        <picture>
+          <img
+            id="logoImg"
+            src="images/logo/logo_lossless80.webp"
+            alt="Yellowstone Chamber of Commmerce Logo (A bison)"
+          />
+        </picture>
+      </a>
       <h1>
         Welcome to<br />
         <span>Yellowstone</span><br />
         Chamber of Commerce
       </h1>
     </section>
-    <article class="meeting-banner">
+    <div class="meeting-banner">
       <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
-    </article>
+    </div>
     <nav>
       <ul class="navigation">
         <li><a class="menuButton" href="#"> Menu</a></li>
@@ -54,7 +57,7 @@
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li>
           <a class="social" href="https://www.facebook.com/" target="_blank"
             ><img
@@ -72,43 +75,47 @@
       </ul>
     </nav>
     <section>
-      <p>Add us to your bookmarks: 
-        <address>
-          <a href="#">yellowstonechamber.com</a>
-        </address>
-      </p>
+      <h4>Add us to your bookmarks: </h4>
+      <address>
+        <a class="anchor-btn" href="index.html">yellowstonechamber.com</a>
+      </address>
     </section>
   </header>
   <main id="dir-main">
     <div class="directory">
       <!-- <button id="grid">grid</button> -->
-      <button id="grid" aria-label="format content as grid">
+      <div id="grid">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-      </button>
-      <button id="list" aria-label="format content as list">
+      </div>
+      <div id="list">
         <div></div>
         <div></div>
         <div></div>
-      </button>
+      </div>
     </div>
-    <article class="dir-cards"></article>
+    <article class="dir-cards">
+      <h2 class="dir-h">Our Members</h2>
+    </article>
   </main>
   <footer>
-    <picture id="contactPic"
-      ><img
-        id="contactImg"
-        src="images/logo/logo_lossless80.webp"
-        alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-    /></picture>
+    <a class="logo-a" href="index.html">
+      <picture id="contactPic">
+        <img
+          id="contactImg"
+          src="images/logo/logo_lossless80.webp"
+          alt="Yellowstone Chamber of Commmerce Logo (A bison)"
+        />
+    </picture>
+    </a>
     <section id="contactInfo">
       <h3 class="contacts">Yellowstone Chamber of Commerce</h3>
       <p class="contacts">104 Yellowstone Ave</p>
       <p class="contacts">West Yellowstone, MT 59758</p>
     </section>
-    <section id="contactMap">
+    <div id="contactMap">
       <p class="contacts">
         <!-- <address> -->
           <a href="#">info@yellowstonechamber.com</a>
@@ -121,7 +128,7 @@
           >📍 Where to find us</a
         >
       </p>
-    </section>
+    </div>
     <ul>
       <li id="copyright" class="footer-li">
         &copy;

@@ -39,8 +39,15 @@
     grid-column: 1/3;
   }
 
-  #hero button {
-    grid-column: 7/10;
+  #hero a {
+    grid-column: 6/11;
+  }
+
+
+  #hero button,
+  #hero-button {
+    grid-column: 6/10;
+    margin-top: 14rem;
   }
 
   #container {

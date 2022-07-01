@@ -9,7 +9,7 @@
     </title>
     <meta
       name="description"
-      content="This is the home page for the Yellowstone Chamber of Commerce."
+      content="This is the home page for the Yellowstone Chamber of Commerce. Here you will find information on the weather, news, events, and other activities taking place around the Yellowstone area."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,21 +32,24 @@
     <header>
       <div id="lastModified"></div>
       <section>
-        <picture
-          ><img
-            id="logoImg"
-            src="images/logo/logo_lossless80.webp"
-            alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-        /></picture>
+        <a class="logo-a" href="index.html">
+          <picture>
+            <img
+              id="logoImg"
+              src="images/logo/logo_lossless80.webp"
+              alt="Yellowstone Chamber of Commmerce Logo (A bison)"
+            />
+          </picture>
+        </a>
         <h1>
           Welcome to<br />
           <span>Yellowstone</span><br />
           Chamber of Commerce
         </h1>
       </section>
-      <article class="meeting-banner">
-        <h5>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h5>
-      </article>
+      <div class="meeting-banner">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+      </div>
       <!-- <h1 id="logo-h1">
       <picture
         ><img
@@ -61,7 +64,7 @@
           <li><a href="discover.html">Discover</a></li>
           <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li>
             <a class="social" href="https://www.facebook.com/" target="_blank"
               ><img
@@ -79,11 +82,10 @@
         </ul>
       </nav>
       <section>
-        <p>Add us to your bookmarks: 
-          <address>
-            <a href="#">yellowstonechamber.com</a>
-          </address>
-        </p>
+        <h4>Add us to your bookmarks: </h4>
+        <address>
+          <a class="anchor-btn" href="index.html">yellowstonechamber.com</a>
+        </address>
       </section>
     </header>
     <main>
@@ -95,27 +97,32 @@
       <section id="hero" class="placeholder">
         <h2>Welcome to Yellowstone</h2>
         <picture>
-          <!-- <img src="images/sunset_rsz50.jpg" sizes="80vw"
+          <img src="images/sunset_rsz50.jpg" sizes="80vw"
           srcset="images/banner/sunset_rsz200.jpg 200w, 
           images/banner/sunset_rsz400.jpg 400w, 
-          images/banner/sunset_rsz800.jpg 800w" alt="An image of a sunset in Yellowstone National Park"> -->
-          <img src="images/optimized/wdd230-org.jpg"
+          images/banner/sunset_rsz800.jpg 800w" alt="An image of a sunset in Yellowstone National Park">
+          <!-- <img src="images/optimized/wdd230-org.jpg"
           sizes="(max-width: 959px) 100vw 50vw"
           srcset="images/optimized/wdd230-400.jpg 400w, 
           images/optimized/wdd230-800.jpg 800w, 
-          images/optimized/wdd230-1200.jpg 1200w" alt="An image of a sunset in Yellowstone National Park">
+          images/optimized/wdd230-1200.jpg 1200w" alt="An image of a sunset in Yellowstone National Park"> -->
           <!-- <source media="(max-width: 739px)" srcset="images/optimized/wdd230-400.jpg">
           <source media="(max-width: 959px)" srcset="images/optimized/wdd230-800.jpg">
           <img src="images/optimized/wdd230-1200.jpg" alt="People in a meeting at a desk."> -->
         </picture>
-        <button>
+        <!-- <button>
           Join the Chamber
-        </button>
+        </button> -->
+        <!-- <a href="join.html"> -->
+          <button id="hero-button" class="load-join-btn">
+            Join the Chamber
+          </button>
+        <!-- </a> -->
       </section>
       <aside id="container" class="placeholder">
         <section class="placeholder spotlight">
           <h3>Thankful Transport</h3>
-          <picture class="textImg">🚚</picture>
+          <p class="textImg">🚚</p>
           <p>"We get it there for you!"</p>
           <hr>
           <address>
@@ -125,7 +132,7 @@
         </section>
         <section class="placeholder spotlight">
           <h3>Code Primera</h3>
-          <picture class="textImg">🧬</picture>
+          <p class="textImg">🧬</p>
           <p>An after school coding instructional program.</p>
           <hr>
           <address>
@@ -135,7 +142,8 @@
         </section>
         <section class="placeholder spotlight">
           <h3>Build A Treefort</h3>
-          <picture class="textImg">🌳</picture>
+          <!-- <picture class="textImg">🌳</picture> -->
+          <p class="textImg">🌳</p>
           <p>Over 1000 Plans!</p>
           <hr>
           <address>
@@ -151,7 +159,7 @@
         <div>
           <!-- <picture class="textImg">⛅</picture> -->
           <figure>
-            <img src="" alt="" id="textImg" />
+            <img src="⛅" alt="image of current weather conditions" id="textImg" />
             <figcaption id="tempConditions"></figcaption>
           </figure>
           <!-- <span> -->
@@ -161,53 +169,44 @@
           <!-- </span> -->
           <!-- <h4 id="tempConditions">Partly Cloudy</h4> -->
           <!-- <hr> -->
-          <h4 id="windSpeed">
-            Wind Speed: 
-            <!-- <span> -->
-              <h4 id="windSpeedH4">2.5 km/h</h4>
-            <!-- </span> -->
-          </h4>
-          <h4 id="windChill">
-            Wind Chill: 
-            <!-- <span> -->
-              <h4 id="windChillH4"></h4>
-            <!-- </span> -->
-          </h4>
+          <h4 id="windSpeed">Wind Speed: </h4>
+          <h4 id="windSpeedH4">2.5 km/h</h4>
+          <h4 id="windChill">Wind Chill: </h4>
+          <h4 id="windChillH4">N/A</h4>
         </div>
         <hr>
       </section>
-      <section id="join" class="placeholder">
-        <a href="join.html">
-          <button>
+      <div id="join" class="placeholder">
+          <button class="load-join-btn">
             Join Us!
           </button>
-        </a>
-        <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-      </section>
-      <section id="news" class="placeholder">
+        <p>Discover how to join the chamber of commerce and how it can benefit your organization!</p>
+      </div>
+      <div id="news" class="placeholder">
         <article>
           <h3>News Release</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit mollitia quod expedita provident fugit dolor esse eos omnis quos. Assumenda, reiciendis accusamus illo possimus quidem blanditiis quis eligendi totam nulla.</p>
+          <p>The annual State Fair starts this Thursday. Come and join us for the festivities. There will be prizes, games, and delicious treats for everyone who attends. As always, our booth is located at the North end of the fair grounds just East of the ferris wheel.</p>
         </article>
-      </section>
+      </div>
     </main>
     <footer>
-      <picture id="contactPic"
-        ><img
-          id="contactImg"
-          src="images/logo/logo_lossless80.webp"
-          alt="Yellowstone Chamber of Commmerce Logo (A bison)"
-      /></picture>
+      <a class="logo-a" href="index.html">
+        <picture id="contactPic">
+          <img
+            id="contactImg"
+            src="images/logo/logo_lossless80.webp"
+            alt="Yellowstone Chamber of Commmerce Logo (A bison)"
+          />
+      </picture>
+      </a>
       <section id="contactInfo">
         <h3 class="contacts">Yellowstone Chamber of Commerce</h3>
         <p class="contacts">104 Yellowstone Ave</p>
         <p class="contacts">West Yellowstone, MT 59758</p>
       </section>
-      <section id="contactMap">
+      <div id="contactMap">
         <p class="contacts">
-          <!-- <address> -->
             <a href="#">info@yellowstonechamber.com</a>
-          <!-- </address> -->
         </p>
         <p class="contacts">+1 (555) 935-5697</p>
         <p class="contacts">
@@ -216,7 +215,7 @@
             >📍 Where to find us</a
           >
         </p>
-      </section>
+      </div>
       <ul>
         <li id="copyright" class="footer-li">
           &copy;
@@ -245,5 +244,6 @@
     <!-- <script src="js/windchill.js"></script> -->
     <script src="js/weatherapi.js"></script>
     <script src="js/visits.js"></script>
+    <script src="js/events.js"></script>
   </body>
 </html>
