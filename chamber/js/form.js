@@ -8,21 +8,19 @@ formSubmission.addEventListener("click", () => {
   dateSubmitted.textContent = `Form submitted on: ${currentModDateTime}.`;
 });
 
-if (positionTitle != null) {
-  positionTitle.addEventListener("focusout", testReg);
+positionTitle.addEventListener("focusout", testReg);
 
-  function testReg() {
-    let reg = positionTitle.value;
-    
-    if (reg.match(/^[-\sa-zA-Z]{7,}$/)) {
-      alertMsg.style.display = "none";
-      alertMsg.textContent = "";
-    } else {
-      alertMsg.style.display = "block";
-      alertMsg.textContent =
-        "**ALERT** Position/Title must be 7 characters long and may only contain letters, hyphens, and spaces.";
-      positionTitle.focus();
-      positionTitle.value = "";
-    }
+function testReg() {
+  let reg = positionTitle.value;
+
+  if (reg.match(/^[-\sa-zA-Z]{7,}$/)) {
+    alertMsg.style.display = "none";
+    alertMsg.textContent = "";
+  } else {
+    alertMsg.style.display = "block";
+    alertMsg.textContent =
+      "**ALERT** Position/Title must be 7 characters long and may only contain letters, hyphens, and spaces.";
+    positionTitle.focus();
+    positionTitle.value = "";
   }
 }
