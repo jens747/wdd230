@@ -22,7 +22,6 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
     <link rel="shortcut icon" href="favicon_io/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/medium.css" />
@@ -32,7 +31,7 @@
     <header>
       <div id="lastModified"></div>
       <section>
-        <a class="logo-a" href="index.html">
+        <a class="logo-a" href="index.html" aria-label="logo image">
           <picture>
             <img
               id="logoImg"
@@ -50,13 +49,6 @@
       <div class="meeting-banner">
         <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
       </div>
-      <!-- <h1 id="logo-h1">
-      <picture
-        ><img
-          src="images/logo_rsz25.png"
-          alt="Yellowstone Chamber of Commmerce Logo (A bison)" /></picture
-      >Welcome to<br />Yellowstone Chamber of Commerce
-    </h1> -->
       <nav>
         <ul class="navigation">
           <li><a class="menuButton" href="#"> Menu</a></li>
@@ -101,23 +93,10 @@
           srcset="images/banner/sunset_rsz200.jpg 200w, 
           images/banner/sunset_rsz400.jpg 400w, 
           images/banner/sunset_rsz800.jpg 800w" alt="An image of a sunset in Yellowstone National Park">
-          <!-- <img src="images/optimized/wdd230-org.jpg"
-          sizes="(max-width: 959px) 100vw 50vw"
-          srcset="images/optimized/wdd230-400.jpg 400w, 
-          images/optimized/wdd230-800.jpg 800w, 
-          images/optimized/wdd230-1200.jpg 1200w" alt="An image of a sunset in Yellowstone National Park"> -->
-          <!-- <source media="(max-width: 739px)" srcset="images/optimized/wdd230-400.jpg">
-          <source media="(max-width: 959px)" srcset="images/optimized/wdd230-800.jpg">
-          <img src="images/optimized/wdd230-1200.jpg" alt="People in a meeting at a desk."> -->
         </picture>
-        <!-- <button>
-          Join the Chamber
-        </button> -->
-        <!-- <a href="join.html"> -->
           <button id="hero-button" class="load-join-btn">
             Join the Chamber
           </button>
-        <!-- </a> -->
       </section>
       <aside id="container" class="placeholder">
         <section class="placeholder spotlight">
@@ -142,7 +121,6 @@
         </section>
         <section class="placeholder spotlight">
           <h3>Build A Treefort</h3>
-          <!-- <picture class="textImg">🌳</picture> -->
           <p class="textImg">🌳</p>
           <p>Over 1000 Plans!</p>
           <hr>
@@ -157,18 +135,13 @@
           Weather
         </h3>
         <div>
-          <!-- <picture class="textImg">⛅</picture> -->
           <figure>
-            <img src="⛅" alt="image of current weather conditions" id="textImg" />
+            <img src="images/weather/icons8-partly-cloudy-53.png" alt="image of current weather conditions, Partly Cloudy icon by Icons8" id="textImg" />
             <figcaption id="tempConditions"></figcaption>
           </figure>
-          <!-- <span> -->
             <h4 id="temp">
               33°C
             </h4>
-          <!-- </span> -->
-          <!-- <h4 id="tempConditions">Partly Cloudy</h4> -->
-          <!-- <hr> -->
           <h4 id="windSpeed">Wind Speed: </h4>
           <h4 id="windSpeedH4">2.5 km/h</h4>
           <h4 id="windChill">Wind Chill: </h4>
@@ -190,7 +163,7 @@
       </div>
     </main>
     <footer>
-      <a class="logo-a" href="index.html">
+      <a class="logo-a" href="index.html" aria-label="logo image">
         <picture id="contactPic">
           <img
             id="contactImg"
@@ -222,13 +195,6 @@
           <span id="copyrightYear"></span>
           Yellowstone Chamber
         </li>
-        <!-- <li><span class="pipe"> || </span>Joel Jensen</li>
-        <li><span class="pipe"> || </span>BYU-Idaho</li>
-        <li><span class="pipe"> || </span>WDD 230</li>
-        <li>
-          <span class="pipe"> || </span>
-          <div id="lastModified">Last Modified:</div>
-        </li> -->
         <li class="footer-li">Joel Jensen</li>
         <li class="footer-li">BYU-Idaho</li>
         <li class="footer-li">WDD 230</li>
@@ -241,7 +207,6 @@
     </footer>
     <script src="js/last-modified.js"></script>
     <script src="js/responsive.js"></script>
-    <!-- <script src="js/windchill.js"></script> -->
     <script src="js/weatherapi.js"></script>
     <script src="js/visits.js"></script>
     <script src="js/events.js"></script>

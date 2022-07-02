@@ -4,19 +4,16 @@ const weatherIcon = document.querySelector("#textImg");
 const captionDesc = document.querySelector("#tempConditions");
 const windSpeed = document.querySelector("#windSpeedH4");
 const windChill = document.querySelector("#windChillH4");
-// const currentTemp = document.querySelector("#current-temp");
-// const weatherIcon = document.querySelector("#weather-icon");
-// const captionDesc = document.querySelector("figcaption");
 
 const url =
-  "https://api.openweathermap.org/data/2.5/weather?q=Jackson, WY, US&units=imperial&appid=47b6a434ebf8169e3efc3593184ee675";
+  "https://api.openweathermap.org/data/2.5/weather?q=Jackson,WY,US&units=imperial&appid=47b6a434ebf8169e3efc3593184ee675";
 
 async function fetchWeather() {
   try {
     const res = await fetch(url);
     if (res.ok) {
       const data = await res.json();
-      console.log(data);
+
       displayWeather(data);
     } else {
       throw Error(await res.text());

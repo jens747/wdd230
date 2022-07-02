@@ -66,11 +66,7 @@ let currentDateTime = `${currentDay}, ${currentMonth} ${currentDayOf}, ${current
 
 // Variable used to insert date into webpage
 const copyrightYear = document.querySelector("#copyrightYear");
-// const theDate = document.querySelector("p");
-
-// copyrightYear.textContent = currentDateAndTime.getFullYear();
 copyrightYear.textContent = currentYear;
-// theDate.innerHTML = `<strong>${currentDateAndTime}</strong>`;
 
 // Variable to update the lastModified div
 const lastModified = document.querySelector("#lastModified");
@@ -92,7 +88,6 @@ window.addEventListener("load", () => {
   // displays the banner on Monday's and Tuesday's
   if (currentDateAndTime.getDay() < 3 && 
     currentDateAndTime.getDay() > 0) {
-    // meetingBanner.classList.toggle("show-meeting-banner")
     meetingBanner.style.display = "block";
   }
 }, false);

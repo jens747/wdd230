@@ -1,4 +1,3 @@
-// 
 const loadJoin = document.querySelectorAll(".load-join-btn");
 
 loadJoin.forEach((loader) => {

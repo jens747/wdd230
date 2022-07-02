@@ -2,10 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
     Contact information and forms to contact the Yellowstone Chamber of Commerce 
   </title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta
     name="description"
     content="This is the contact page for the Yellowstone Chamber of Commerce. There is a form here for you to contact us with any questions you may have about our organization."
@@ -21,7 +22,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon_io/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/medium.css" />
@@ -31,7 +31,7 @@
   <header>
     <div id="lastModified"></div>
     <section>
-      <a class="logo-a" href="index.html">
+      <a class="logo-a" href="index.html" aria-label="logo image">
         <picture>
           <img
             id="logoImg"
@@ -103,13 +103,6 @@
           <label class="top"><span>Last Name* </span><input type="text" name="lname" required></label>
           <label class="top"><span>Email* </span><input type="email" name="email" placeholder="email@example.com" required></label>
           <label class="top"><span>Comments/Questions</span><textarea name="description" rows="5"></textarea></label>
-
-          <!-- <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-          <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-          <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-          <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label> -->
-
-          <!-- <label class="top dateSubmitted"><input type="hidden" name="dateSubmitted"></label> -->
         </fieldset>
 
         <input type="submit" value="Send Your Comments" id="submitBtn">
@@ -117,7 +110,7 @@
       </form>
   </main>
   <footer>
-    <a class="logo-a" href="index.html">
+    <a class="logo-a" href="index.html" aria-label="logo image">
       <picture id="contactPic">
         <img
           id="contactImg"
@@ -133,9 +126,7 @@
     </section>
     <div id="contactMap">
       <p class="contacts">
-        <!-- <address> -->
           <a href="#">info@yellowstonechamber.com</a>
-        <!-- </address> -->
       </p>
       <p class="contacts">+1 (555) 935-5697</p>
       <p class="contacts">
@@ -163,7 +154,6 @@
   </footer>
   <script src="js/last-modified.js"></script>
   <script src="js/responsive.js"></script>
-  <script src="js/lazy-load.js"></script>
   <script src="js/visits.js"></script>
   <script src="js/form.js"></script>
 </html>

@@ -22,7 +22,6 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
   <link rel="shortcut icon" href="favicon_io/favicon.ico">
-  <!-- <link rel="manifest" href="/site.webmanifest"> -->
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/medium.css" />
@@ -32,7 +31,7 @@
   <header>
     <div id="lastModified"></div>
     <section>
-      <a class="logo-a" href="index.html">
+      <a class="logo-a" href="index.html" aria-label="logo image">
         <picture>
           <img
             id="logoImg"
@@ -100,24 +99,10 @@
           <label class="top"><span>Position/Title</span><input type="text" name="position" id="position" pattern="[-\sa-zA-Z]+" minlength="7"></label>
           <label class="top"><span>Business Description</span><textarea name="description" rows="5"></textarea>
           </label>
-          <!-- <label class="sbs"><input type="checkbox" name="code" value="yes"> Coding</label>
-          <label class="sbs"><input type="checkbox" name="client" value="yes"> FTP Client</label>
-          <label class="sbs"><input type="checkbox" name="editing" value="yes"> Photo Editing</label>
-          <label class="sbs"><input type="checkbox" name="process" value="yes"> Preprocessor</label> -->
         </fieldset>
 
         <fieldset>
           <legend>Membership Level</legend>
-          <!-- <label class="top">
-            Membership Level
-            <select name="membership">
-                <option value="">Please Select &#9662;</option>
-                <option value="np">Non-profit</option>
-                <option value="bronze">Bronze</option>
-                <option value="silver">Silver</option>
-                <option value="gold">Gold</option>
-            </select>
-          </label> -->
           <div id="member-benefits">Benefits</div>
           <label class="top membership"><input type="radio" name="membership" value="np"><span>Non-profit</span><span id="span-benefits1" class="member-benefits">Fee: free, basic level benefits</span></label>
           <label class="top membership"><input type="radio" name="membership" value="bronze"><span>Bronze</span><span id="span-benefits2" class="member-benefits">Fee: $40/yr, bronze level benefits</span></label>
@@ -133,7 +118,7 @@
 
   </main>
   <footer>
-    <a class="logo-a" href="index.html">
+    <a class="logo-a" href="index.html" aria-label="logo image">
       <picture id="contactPic">
         <img
           id="contactImg"
@@ -149,9 +134,7 @@
     </section>
     <div id="contactMap">
       <p class="contacts">
-        <!-- <address> -->
           <a href="#">info@yellowstonechamber.com</a>
-        <!-- </address> -->
       </p>
       <p class="contacts">+1 (555) 935-5697</p>
       <p class="contacts">
@@ -179,7 +162,6 @@
   </footer>
   <script src="js/last-modified.js"></script>
   <script src="js/responsive.js"></script>
-  <script src="js/lazy-load.js"></script>
   <script src="js/visits.js"></script>
   <script src="js/form.js"></script>
 </body>
