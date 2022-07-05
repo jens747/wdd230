@@ -8,8 +8,6 @@ const fetchJSON = async () => {
     const jsonObject = await res.json();
     const businesses = jsonObject["businesses"];
 
-    console.log(businesses);
-
     businesses.forEach(displayCards);
   } catch (error) {
     console.log(error);
