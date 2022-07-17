@@ -1,0 +1,156 @@
+/* Source: https://coolors.co/1b9d8e-f8f1ff-decbf6-eddcd4-f78964 */
+/* Set up root variables */
+:root {
+  --greenco: #1b9d8e;
+  --redco: #f78964;
+  --violetcolt: #f8f1ff;
+  --violetco: #decbf6;
+  --tancolt: #eddcd4;
+}
+
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+  font-size: 16px;
+  font-family: "Noto Serif", serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*----------- HEADER --------------*/
+header {
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+}
+nav ul {
+}
+nav ul li {
+}
+nav ul li a {
+}
+nav ul li:first-child a {
+}
+
+nav ul li a:hover {
+}
+nav ul li.active a {
+}
+/*----------- MAIN --------------*/
+main {
+}
+
+/*----------- FORM --------------*/
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9;
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+}
+
+form legend {
+  color: #445ba9;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #9c2c13;
+  font-size: 0.8rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 100%;
+  max-width: 20rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: #555;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #9c2c13;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+}
+
+.social {
+  justify-self: end;
+  background: #555;
+}
+
+#fb:hover {
+  background: #166fe5;
+}
+
+#ig:hover {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(
+    201deg,
+    rgba(131, 58, 180, 1) 5%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 80%
+  );
+}
+
+#tw:hover {
+  background: rgb(29, 155, 240);
+}
+
+#yt:hover {
+  background: #e52d27;
+}
+
+#pn:hover {
+  background: #bd081c;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

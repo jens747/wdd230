@@ -1,0 +1,24 @@
+{
+  "businesses": [
+    {
+      "category": "Arts & Culture",
+      "name": "Center for the Arts",
+      "address": "265 S Cache Street, Jackson, WY 83001",
+      "phone": "(307) 734-8956",
+      "fax": "(307) 733-9582",
+      "url": "https://www.jhcenterforthearts.org/",
+      "logo": "images/directory/jhca.svg",
+      "member": "Non-profit"
+    },
+    {
+      "category": "Food & Drink",
+      "name": "Bubba's BBQ Restaurant",
+      "address": "100 Flat Creek Drive, Jackson, WY  83001",
+      "phone": "(307) 733-2288",
+      "fax": "",
+      "url": "https://bubbasjh.com/",
+      "logo": "images/directory/bubbas96.png",
+      "member": "Gold"
+    }
+  ]
+}
