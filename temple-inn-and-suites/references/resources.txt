@@ -2,3 +2,5 @@ Sources:
 1. Color scheme: https://coolors.co/1b9d8e-f8f1ff-decbf6-eddcd4-f78964
 2. Map data ©2022 Google
 3. Function removes leading zeroes: https://bobbyhadz.com/blog/javascript-get-minutes-with-leading-zero
+4. Temple data: https://www.churchofjesuschrist.org/temples/list?lang=eng
+5. 

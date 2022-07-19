@@ -32,6 +32,37 @@ body {
 header {
 }
 
+.btn-alert {
+  /* color: white; */
+  padding: 0.4rem 1rem;
+  width: 100%;
+  text-align: start;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-alert:nth-of-type(odd) {
+  background: var(--redco);
+}
+
+.btn-alert:nth-of-type(even) {
+  background: var(--greenco);
+}
+
+.btn-alert::after {
+  content: "X";
+}
+
+.alert-close {
+  display: none;
+}
+
+.btn-alert:hover {
+  background: var(--violetco);
+  color: black;
+}
+
 /*----------- NAVIGATION --------------*/
 nav {
 }
@@ -111,6 +142,13 @@ form label.top input:required {
 
 form label.top input:required:valid {
   border-left: green solid 6px;
+}
+
+#current-weather div {
+  background-image: url("https://source.unsplash.com/400x300/?Bethesda,MD");
+  min-height: 300px;
+  max-width: 400px;
+  opacity: 0.75;
 }
 
 /*----------- FOOTER --------------*/

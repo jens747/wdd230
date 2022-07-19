@@ -1,24 +1,213 @@
 {
-  "businesses": [
-    {
-      "category": "Arts & Culture",
-      "name": "Center for the Arts",
-      "address": "265 S Cache Street, Jackson, WY 83001",
-      "phone": "(307) 734-8956",
-      "fax": "(307) 733-9582",
-      "url": "https://www.jhcenterforthearts.org/",
-      "logo": "images/directory/jhca.svg",
-      "member": "Non-profit"
+  "temples": {
+    "Boise": {
+      "name": "Boise Idaho Temple",
+      "address": "1211 S Cole Rd \nBoise ID 83709-1871 \nUnited States",
+      "phone": "(1) 208-322-4422",
+      "email": "BOISE-OFF@ChurchofJesusChrist.org",
+      "url": "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng",
+      "services": [
+        "No clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "ordinances": {
+        "Proxy Baptism": "Tue - Sat, 6:00 AM - 8:00 PM, Regular Session",
+        "Proxy Initiatory": "Tue - Fri, 7:00 AM - 8:30 PM, Sat 7:00 AM - 8:30 PM, Regular Session",
+        "Proxy Endowment": "Tue - Fri, 7:00 AM - 8:00 PM, Sat 7:00 AM - 8:30 PM, Regular Session",
+        "Proxy Sealing": "Tue - Fri, 7:30 AM - 8:00 PM, Sat 7:00 AM - 8:30 PM, Regular Session"
+      },
+      "closures": {
+        "2022": [
+          "Saturday, 1 October 2022",
+          "Monday, 10 October 2022 - Monday, 24 October 2022",
+          "Wednesday, 23 November 2022 (Limited Operations)",
+          "Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022 (Limited Operations)"
+        ],
+        "2023": [
+          "Saturday, 1 April 2023",
+          "Monday, 1 May 2023 - Monday, 15 May 2023",
+          "Tuesday, 4 July 2023",
+          "Saturday, 30 September 2023",
+          "Monday, 9 October 2023 - Monday, 23 October 2023",
+          "Wednesday, 22 November 2023 (Limited Operations)",
+          "Thursday, 23 November 2023"
+        ]
+      },
+      "history": {
+        "Announced": "31 March 1982",
+        "Groundbreaking": "18 December 1982",
+        "Dedicated": {
+          "date": "25 May 1984",
+          "prayer": "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple/prayer/1984-05-25?lang=eng"
+        },
+        "Rededicated": [
+          {
+            "date": "14 February 1987",
+            "prayer": "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple/prayer/1987-02-14?lang=eng"
+          },
+          {
+            "date": "18 November 2012",
+            "prayer": "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple/prayer/2012-11-18?lang=eng"
+          }
+        ]
+      },
+      "imgmain": "../images/temples/boise/boise_idaho_temple_sunshine.jpeg",
+      "imgalternate": "../images/temples/boise/boise-idaho-temple-exterior-2012-lg.jpg"
     },
-    {
-      "category": "Food & Drink",
-      "name": "Bubba's BBQ Restaurant",
-      "address": "100 Flat Creek Drive, Jackson, WY  83001",
-      "phone": "(307) 733-2288",
-      "fax": "",
-      "url": "https://bubbasjh.com/",
-      "logo": "images/directory/bubbas96.png",
-      "member": "Gold"
+    "Logan": {
+      "name": "Logan Utah Temple",
+      "address": "175 N 300 E \nLogan UT 84321-4720 \nUnited States",
+      "phone": "(1) 435-752-3611",
+      "email": "LOGAN-OFF@ChurchofJesusChrist.org",
+      "url": "https://www.churchofjesuschrist.org/temples/details/logan-utah-temple?lang=eng",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "No distribution center nearby"
+      ],
+      "ordinances": {
+        "Proxy Baptism": "Tue - Sat, 6:00 AM - 8:00 PM, Regular Session",
+        "Proxy Initiatory": "Tue - Fri, 7:00 AM - 8:30 PM, Sat 7:00 AM - 8:30 PM, Regular Session",
+        "Proxy Endowment": "Tue - Fri, 7:00 AM - 8:00 PM, Sat 7:00 AM - 8:30 PM, Regular Session",
+        "Proxy Sealing": "Tue - Fri, 7:30 AM - 8:00 PM, Sat 7:00 AM - 8:30 PM, Regular Session"
+      },
+      "closures": {
+        "2022": [
+          "Saturday, 1 October 2022",
+          "Monday, 3 October 2022 - Monday, 17 October 2022",
+          "Wednesday, 23 November 2022 (Limited Operations)",
+          "Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022 (Limited Operations)"
+        ],
+        "2023": [
+          "Monday, 13 February 2023 - Monday, 27 February 2023",
+          "Saturday, 1 April 2023",
+          "Tuesday, 4 July 2023",
+          "Saturday, 30 September 2023",
+          "Monday, 2 October 2023 - Monday, 16 October 2023",
+          "Wednesday, 22 November 2023 (Limited Operations)",
+          "Thursday, 23 November 2023",
+          "Saturday, 23 December 2023"
+        ]
+      },
+      "history": {
+        "Announced": "6 October 1876",
+        "Groundbreaking": "18 May 1877",
+        "Dedicated": {
+          "date": "17 May 1884",
+          "prayer": "https://www.churchofjesuschrist.org/temples/details/logan-utah-temple/prayer/1884-05-17?lang=eng"
+        },
+        "Rededicated": [
+          {
+            "date": "13 March 1979",
+            "prayer": "https://www.churchofjesuschrist.org/temples/details/logan-utah-temple/prayer/1979-03-13?lang=eng"
+          }
+        ]
+      },
+      "imgmain": "../images/temples/logan/logan_temple_lds.jpeg",
+      "imgalternate": "../images/temples/logan/logan-temple-lds-lg.jpeg"
+    },
+    "Mesa": {
+      "name": "Mesa Arizona Temple",
+      "address": "101 S LeSueur \nMesa AZ 85204-1031 \nUnited States",
+      "phone": "(1) 480-833-1211",
+      "email": "ARIZO-OFF@ChurchofJesusChrist.org",
+      "url": "https://www.churchofjesuschrist.org/temples/details/mesa-arizona-temple?lang=eng",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "ordinances": {
+        "Proxy Baptism": "Tue - Sat, 6:00 AM - 8:00 PM, Regular Session",
+        "Proxy Initiatory": "Tue - Fri, 7:00 AM - 5:30 PM, Sat 7:00 AM - 10:30 PM, Regular Session",
+        "Proxy Endowment": "Tue - Fri, 7:00 AM - 6:00 PM, Sat 7:00 AM - 10:30 PM, Regular Session",
+        "Proxy Sealing": "Tue - Fri, 7:30 AM - 5:00 PM, Sat 7:00 AM - 11:00 PM, Regular Session"
+      },
+      "closures": {
+        "2022": [
+          "Monday, 18 July 2022 - Monday, 1 August 2022",
+          "Saturday, 1 October 2022",
+          "Wednesday, 23 November 2022 (Limited Operations)",
+          "Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"
+        ],
+        "2023": [
+          "Monday, 27 February 2023 - Monday, 13 March 2023",
+          "Tuesday, 28 March 2023 - Monday, 10 April 2023 (Limited Operations)",
+          "Saturday, 1 April 2023",
+          "Tuesday, 4 July 2023",
+          "Saturday, 30 September 2023",
+          "Monday, 16 October 2023 - Monday, 30 October 2023",
+          "Wednesday, 22 November 2023 (Limited Operations)"
+        ]
+      },
+      "history": {
+        "Announced": "1 October 1919",
+        "Groundbreaking": "25 April 1922",
+        "Dedicated": {
+          "date": "23 October 1927",
+          "prayer": "https://www.churchofjesuschrist.org/temples/details/mesa-arizona-temple/prayer/1927-10-23?lang=eng"
+        },
+        "Rededicated": [
+          {
+            "date": "15 April 1975",
+            "prayer": "https://www.churchofjesuschrist.org/temples/details/mesa-arizona-temple/prayer/1975-04-15?lang=eng"
+          },
+          {
+            "date": "12 December 2021",
+            "prayer": "https://www.churchofjesuschrist.org/temples/details/mesa-arizona-temple/prayer/2021-12-12?lang=eng"
+          }
+        ]
+      },
+      "imgmain": "../images/temples/mesa/mesa_temple_reflection.jpg",
+      "imgalternate": "../images/temples/mesa/mesa-temple-lds-lg.jpg"
+    },
+    "San Diego": {
+      "name": "San Diego California Temple",
+      "address": "7474 Charmant Dr \nSan Diego CA 92122-5000 \nUnited States",
+      "phone": "(1) 858-622-0991",
+      "email": "SDIEG-OFF@ChurchofJesusChrist.org",
+      "url": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple?lang=eng",
+      "services": [
+        "Clothing rental available",
+        "No cafeteria available",
+        "No patron housing available",
+        "Distribution center nearby"
+      ],
+      "ordinances": {
+        "Proxy Baptism": "Tue - Sat, 8:00 AM - 8:00 PM, Regular Session",
+        "Proxy Initiatory": "Tue - Sat, 8:00 AM - 8:30 PM, Sat 8:00 AM - 8:00 PM, Regular Session",
+        "Proxy Endowment": "Tue - Fri, 5:30 AM - 7:30 PM, Sat 8:00 AM - 5:00 PM, Regular Session",
+        "Proxy Sealing": "Tue - Fri, 8:00 AM - 8:00 PM, Sat 8:00 AM - 7:00 PM, Regular Session"
+      },
+      "closures": {
+        "2022": [
+          "Saturday, 1 October 2022",
+          "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+          "Saturday, 24 December 2022",
+          "Saturday, 31 December 2022"
+        ]
+      },
+      "history": {
+        "Announced": "7 April 1984",
+        "Groundbreaking": "27 February 1988",
+        "Dedicated": {
+          "date": "25 April 1993",
+          "prayer": "https://www.churchofjesuschrist.org/temples/details/san-diego-california-temple/prayer/1993-04-25?lang=eng"
+        },
+        "Rededicated": []
+      },
+      "imgmain": "../images/temples/sandiego/san_diego_california_temple.jpeg",
+      "imgalternate": "../images/temples/sandiego/san-diego-lds-temple-lg.jpg"
     }
-  ]
+  }
 }

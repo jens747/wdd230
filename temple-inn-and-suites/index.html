@@ -23,6 +23,17 @@
   <body>
     <header>
       <h1>Temple Inn & Suites</h1>
+      <div class="weather-alert">
+        <!-- <button class="btn-alert">
+          ***WEATHER ALERT*** Storm Approaching
+        </button>
+        <button class="btn-alert">
+          ***WEATHER ALERT*** Tornado Warning!!!
+        </button>
+        <button class="btn-alert">
+          ***WEATHER ALERT*** Potential Flooding
+        </button> -->
+      </div>
       <a href="index.html">
         <picture
           ><img src="images/logo/star-logo5.png" alt="Temple Inn & Suites Logo"
@@ -36,10 +47,10 @@
           <li>
             <a class="right-nav" href="reservations.html">Reservations</a>
           </li>
-          <li><a class="right-nav" href="services.html">Services</a></li>
-          <li><a class="subpage" href="reception.html">Reception</a></li>
+          <li><a class="right-nav dropdown-nav" href="services.html">Services</a></li>
+          <li><a class="subpage dropdown-nav" href="reception.html">Reception</a></li>
           <li>
-            <a class="subpage" href="missionary.html"
+            <a class="subpage dropdown-nav" href="missionary.html"
               >Full-Time Temple Missionary</a
             >
           </li>
@@ -47,6 +58,14 @@
       </nav>
     </header>
     <main>
+      <picture>
+        <img src="" alt="">
+        <button>Make a Reservation</button>
+      </picture>
+      <section>
+        <h2>Temples</h2>
+        <div class="temple-div"></div>
+      </section>
       <details>
         <summary>Nauvoo Temple</summary>
         <p>
@@ -67,6 +86,18 @@
           natus autem. Earum iure velit libero?
         </p>
       </details>
+      <section>
+        <h2>Weather Forecast</h2>
+        <article id="current-weather">
+          ...loading
+        </article>
+      
+        <article id="weather-3day">
+          <div class="card-3day" id="day1"></div>
+          <div class="card-3day" id="day2"></div>
+          <div class="card-3day" id="day3"></div>
+        </article>
+      </section>
     </main>
     <footer>
       <div class="social">
@@ -163,6 +194,8 @@
       </p>
       </section>
     </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/temples.js"></script>
     <script src="js/date.js"></script>
   </body>
 </html>
