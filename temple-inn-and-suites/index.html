@@ -36,21 +36,24 @@
       </div>
       <a href="index.html">
         <picture
-          ><img src="images/logo/star-logo5.png" alt="Temple Inn & Suites Logo"
+          ><img src="images/logo/star-logo5.png" alt="Temple Inn & Suites Logo" id="logo"
         /></picture>
       </a>
       <nav>
-        <ul>
-          <li><a href="#">Menu</a></li>
+        <ul class="nav-ul">
+          <li class="dropdown-nav">Menu</li>
           <li><a class="left-nav" href="index.html">Home</a></li>
           <li><a class="left-nav" href="temple.html">Temple</a></li>
           <li>
             <a class="right-nav" href="reservations.html">Reservations</a>
           </li>
-          <li><a class="right-nav dropdown-nav" href="services.html">Services</a></li>
-          <li><a class="subpage dropdown-nav" href="reception.html">Reception</a></li>
+          <!-- <li><a class="right-nav dropdown-nav" href="services.html">Services</a></li> -->
+          <li class="right-nav dropdown-nav dropdown-sub">Services</li>
+        </ul>
+        <ul class="subpage-ul dropdown-sub">
+          <li><a class="subpage" href="reception.html">Reception</a></li>
           <li>
-            <a class="subpage dropdown-nav" href="missionary.html"
+            <a class="subpage" href="missionary.html"
               >Full-Time Temple Missionary</a
             >
           </li>
@@ -59,33 +62,30 @@
     </header>
     <main>
       <picture>
-        <img src="" alt="">
-        <button>Make a Reservation</button>
+        <img src="images/temples/saltlake/saltlake_temple_splash.webp" alt="Overhead view of Temple Square in Salt Lake City, UT, looking north west.">
       </picture>
+      <button id="action">Make a Reservation</button>
+      <section id="welcome">
+        <h2>Plan your next destination</h2>
+        <p>Here at Temple Inn & Suites our goal is to make your next visit to the Temple as comfortable as possible. We take care of all of your needs so you can focus on making your experience joyful and  spiritually fulfilling. </p>
+        <hr>
+        <p>Operating in tandem with the Church of Jesus Christ of Latter-Day Saints we are able to offer specialized services at our locations around the world. If you are not a member of the Church, we hope you will still feel welcome to enjoy many of the  services we offer. All we ask is that you abide by the standards of the Church.</p>
+        <hr>
+        <p>Please fell free to peruse some of the services and temples we have featured on our home page, and explore the rest of the site for more detailed information.</p>
+        <h3>Specialized Services</h3>
+        <ul>
+          <li>Access to changing rooms for Temple patrons</li>
+          <li>Babysitting Services</li>
+          <li>Extended Stay Accomodations</li>
+          <li>Reception and Sitting Area</li>
+          <li>Wedding Reception Hall</li>
+          <li>Family Search Center</li>
+        </ul>
+      </section>
       <section>
-        <h2>Temples</h2>
+        <h2>Featured Temples</h2>
         <div class="temple-div"></div>
       </section>
-      <details>
-        <summary>Nauvoo Temple</summary>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          magni voluptates numquam voluptatem aspernatur modi odio nemo tempore
-          officia, nihil minus, ut quo velit consequatur iste placeat accusamus
-          fugit quisquam magnam at nesciunt quasi atque mollitia explicabo.
-          Tenetur quod voluptate autem ab saepe, rem nam fugiat dolorem iusto,
-          fuga ipsa.
-        </p>
-      </details>
-      <details>
-        <summary>Manti Temple</summary>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aliquam
-          maxime facilis sit unde dignissimos deserunt illo quae excepturi
-          accusantium. Provident suscipit dolore dolor et vel, optio rem vitae
-          natus autem. Earum iure velit libero?
-        </p>
-      </details>
       <section>
         <h2>Weather Forecast</h2>
         <article id="current-weather">
@@ -194,6 +194,7 @@
       </p>
       </section>
     </footer>
+    <script src="js/menu.js"></script>
     <script src="js/weather.js"></script>
     <script src="js/temples.js"></script>
     <script src="js/date.js"></script>

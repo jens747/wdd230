@@ -10,26 +10,39 @@
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 
 /*----------- apply a natural box layout model to all elements --------------*/
 * {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
 }
 
 /*----------- BODY --------------*/
 body {
+  width: 100%;
+  max-width: 928px;
   font-size: 16px;
   font-family: "Noto Serif", serif;
+}
+
+p {
   font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  text-align: center;
 }
 
 /*----------- HEADER --------------*/
 header {
+  display: grid;
+}
+
+.weather-alert {
+  grid-row: 1;
+}
+
+header a {
+  grid-row: 2;
 }
 
 .btn-alert {
@@ -43,11 +56,11 @@ header {
 }
 
 .btn-alert:nth-of-type(odd) {
-  background: var(--redco);
+  background: var(--tancolt);
 }
 
 .btn-alert:nth-of-type(even) {
-  background: var(--greenco);
+  background: var(--violetcolt);
 }
 
 .btn-alert::after {
@@ -65,83 +78,206 @@ header {
 
 /*----------- NAVIGATION --------------*/
 nav {
-}
-nav ul {
-}
-nav ul li {
-}
-nav ul li a {
-}
-nav ul li:first-child a {
+  display: block;
+  margin: 2rem 0;
 }
 
-nav ul li a:hover {
+nav ul {
+  height: 0rem;
+  padding: 0;
+  margin: 0;
+  transition: height 0.4s;
 }
+
+nav ul li {
+  list-style: none;
+  display: block;
+  padding: 0.4rem 1rem;
+  background: var(--tancolt);
+  text-align: center;
+}
+
+nav ul li:hover {
+  background: var(--violetco);
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:visited {
+  color: var(--greenco);
+}
+
+.dropdown-nav::after {
+  content: " +";
+}
+
+.close-nav::after {
+  content: " -";
+}
+
 nav ul li.active a {
 }
+
+.open-nav {
+  height: 9.74rem;
+  transition: height 0.4s;
+}
+
+.subpage-ul {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s;
+}
+
+.open-sub {
+  height: 4rem;
+  transition: height 0.4s;
+}
+
+#logo {
+  max-width: 6rem;
+  display: block;
+  margin: auto;
+}
+
 /*----------- MAIN --------------*/
 main {
 }
 
+main img {
+  width: 100%;
+}
+
+#action {
+  background: var(--greenco);
+  padding: 0.4rem 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  border: none;
+}
+
+#action:hover {
+  background: var(--redco);
+  cursor: pointer;
+}
+
+#welcome {
+  margin: 1rem;
+}
+
+h2 + p::first-letter {
+  font-size: 2em;
+  font-family: "Noto Serif", serif;
+  /* background: var(--redco); */
+  /* border-left: 1rem solid var(--redco); */
+}
+
+hr {
+  height: 2px;
+  border: none;
+  /* background: rgb(248, 241, 255); */
+  /* background: linear-gradient(
+    90deg,
+    rgba(248, 241, 255, 1) 0%,
+    rgba(222, 203, 246, 1) 35%,
+    rgba(248, 241, 255, 1) 100%
+  ); */
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(247, 137, 100, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(27, 157, 142, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  ); */
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(237, 220, 212, 1) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.temple-card {
+  padding: 0.4rem;
+  border: 0.4rem inset goldenrod;
+  margin: 0.4rem;
+  font-size: 0.8rem;
+  font-family: "Noto Serif";
+  max-width: 500px;
+  box-shadow: 2px 2px 4px lightgray;
+}
+
 /*----------- FORM --------------*/
 form fieldset {
-  margin: 2rem 0;
-  border: 1px solid #445ba9;
-  border-radius: 10px;
-  padding: 0.5rem 2%;
+  /* margin: 2rem 0; */
+  /* border: 1px solid #445ba9; */
+  /* border-radius: 10px; */
+  /* padding: 0.5rem 2%; */
 }
 
 form legend {
-  color: #445ba9;
-  margin: 0 1rem;
-  padding: 0 0.5rem;
+  /* color: #445ba9; */
+  /* margin: 0 1rem; */
+  /* padding: 0 0.5rem; */
 }
 
 form label.top,
 form div {
-  display: block;
-  padding-top: 1rem;
-  color: #9c2c13;
-  font-size: 0.8rem;
+  /* display: block; */
+  /* padding-top: 1rem; */
+  /* color: #9c2c13; */
+  /* font-size: 0.8rem; */
 }
 
 form label.top input,
 form label.top select {
-  -webkit-appearance: none;
-  display: block;
-  font-size: 1rem;
-  border: solid 1px #999;
-  border-radius: 4px;
-  padding: 0.75rem;
-  color: #555;
-  width: 100%;
-  max-width: 20rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  /* -webkit-appearance: none; */
+  /* display: block; */
+  /* font-size: 1rem; */
+  /* border: solid 1px #999; */
+  /* border-radius: 4px; */
+  /* padding: 0.75rem; */
+  /* color: #555; */
+  /* width: 100%; */
+  /* max-width: 20rem; */
+  /* background-color: rgba(0, 0, 0, 0.1); */
 }
 
 form label.sbs {
-  display: block;
-  padding: 0.75rem;
-  color: #555;
+  /* display: block; */
+  /* padding: 0.75rem; */
+  /* color: #555; */
 }
 
 form input.submitBtn {
-  border: none;
-  background-color: #9c2c13;
-  color: white;
-  border-radius: 1rem;
-  padding: 0.75rem 1.5rem;
-  margin: 0 0 2rem 2%;
-  width: 96%;
-  max-width: 20rem;
+  /* border: none; */
+  /* background-color: #9c2c13; */
+  /* color: white; */
+  /* border-radius: 1rem; */
+  /* padding: 0.75rem 1.5rem; */
+  /* margin: 0 0 2rem 2%; */
+  /* width: 96%; */
+  /* max-width: 20rem; */
 }
 
 form label.top input:required {
-  border-left: red solid 6px;
+  /* border-left: red solid 6px; */
 }
 
 form label.top input:required:valid {
-  border-left: green solid 6px;
+  /* border-left: green solid 6px; */
 }
 
 #current-weather div {

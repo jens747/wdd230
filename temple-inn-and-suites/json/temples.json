@@ -55,8 +55,8 @@
           }
         ]
       },
-      "imgmain": "../images/temples/boise/boise_idaho_temple_sunshine.jpeg",
-      "imgalternate": "../images/temples/boise/boise-idaho-temple-exterior-2012-lg.jpg"
+      "imgmain": "images/temples/boise/boise_temple_main_webp800.webp",
+      "imgalternate": "images/temples/boise/boise_temple_alt_webp600.webp"
     },
     "Logan": {
       "name": "Logan Utah Temple",
@@ -110,8 +110,8 @@
           }
         ]
       },
-      "imgmain": "../images/temples/logan/logan_temple_lds.jpeg",
-      "imgalternate": "../images/temples/logan/logan-temple-lds-lg.jpeg"
+      "imgmain": "images/temples/logan/logan_temple_main_webp800.webp",
+      "imgalternate": "images/temples/logan/logan_temple_alt_webp600.webp"
     },
     "Mesa": {
       "name": "Mesa Arizona Temple",
@@ -168,8 +168,8 @@
           }
         ]
       },
-      "imgmain": "../images/temples/mesa/mesa_temple_reflection.jpg",
-      "imgalternate": "../images/temples/mesa/mesa-temple-lds-lg.jpg"
+      "imgmain": "images/temples/mesa/mesa_temple_main_webp800.webp",
+      "imgalternate": "images/temples/mesa/mesa_temple_alt_webp600.webp"
     },
     "San Diego": {
       "name": "San Diego California Temple",
@@ -206,8 +206,8 @@
         },
         "Rededicated": []
       },
-      "imgmain": "../images/temples/sandiego/san_diego_california_temple.jpeg",
-      "imgalternate": "../images/temples/sandiego/san-diego-lds-temple-lg.jpg"
+      "imgmain": "images/temples/sandiego/sandiego_temple_main_webp800.webp",
+      "imgalternate": "images/temples/sandiego/sandiego_temple_alt_webp600.webp"
     }
   }
 }
