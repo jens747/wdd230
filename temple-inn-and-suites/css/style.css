@@ -22,6 +22,7 @@ body {
   max-width: 928px;
   font-size: 16px;
   font-family: "Noto Serif", serif;
+  background: var(--violetcolt);
 }
 
 p {
@@ -30,6 +31,11 @@ p {
 
 h1 {
   text-align: center;
+}
+
+h2,
+h3 {
+  margin-left: 0.4rem;
 }
 
 /*----------- HEADER --------------*/
@@ -56,11 +62,11 @@ header a {
 }
 
 .btn-alert:nth-of-type(odd) {
-  background: var(--tancolt);
+  background: var(--greenco);
 }
 
 .btn-alert:nth-of-type(even) {
-  background: var(--violetcolt);
+  background: var(--violetco);
 }
 
 .btn-alert::after {
@@ -72,7 +78,7 @@ header a {
 }
 
 .btn-alert:hover {
-  background: var(--violetco);
+  background: var(--redco);
   color: black;
 }
 
@@ -80,25 +86,27 @@ header a {
 nav {
   display: block;
   margin: 2rem 0;
+  margin-bottom: 0;
 }
 
 nav ul {
-  height: 0rem;
+  height: 2rem;
   padding: 0;
   margin: 0;
   transition: height 0.4s;
+  overflow: hidden;
 }
 
 nav ul li {
   list-style: none;
   display: block;
   padding: 0.4rem 1rem;
-  background: var(--tancolt);
+  background: var(--violetco);
   text-align: center;
 }
 
 nav ul li:hover {
-  background: var(--violetco);
+  background: var(--greenco);
   cursor: pointer;
 }
 
@@ -107,9 +115,9 @@ nav ul li a {
   color: black;
 }
 
-nav ul li a:visited {
+/* nav ul li a:visited {
   color: var(--greenco);
-}
+} */
 
 .dropdown-nav::after {
   content: " +";
@@ -152,21 +160,61 @@ main img {
   width: 100%;
 }
 
-#action {
+form input.submitBtn,
+#action,
+.thanks-btn {
   background: var(--greenco);
   padding: 0.4rem 1rem;
   width: 100%;
   margin: 1rem 0;
   border: none;
+  border: 0.4rem double white;
+  box-shadow: 2px 2px 4px darkgray;
 }
 
-#action:hover {
-  background: var(--redco);
+#action,
+.thanks-btn {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  display: block;
+  margin: 0.4rem auto;
+  width: 15.4rem;
+}
+
+#action:visited,
+#action:active,
+.thanks-btn:visited,
+.thanks-btn:active {
+  color: black;
+}
+
+form input.submitBtn:hover,
+#action:hover,
+.thanks-btn:hover {
+  background: var(--violetco);
   cursor: pointer;
 }
 
+#thanks-main {
+  padding: 2rem 0;
+}
+
+#thanks-h3 {
+  margin: 0;
+}
+
 #welcome {
-  margin: 1rem;
+  margin-bottom: 1rem;
+}
+
+#welcome p,
+#welcome ul {
+  margin: 0.4rem;
+}
+
+#welcome ul li {
+  list-style-type: disclosure-closed;
 }
 
 h2 + p::first-letter {
@@ -211,12 +259,16 @@ hr {
 
 .temple-card {
   padding: 0.4rem;
-  border: 0.4rem inset goldenrod;
-  margin: 0.4rem;
+  border: 0.4rem groove var(--violetco);
+  margin: 0.8rem 0.4rem;
   font-size: 0.8rem;
   font-family: "Noto Serif";
   max-width: 500px;
-  box-shadow: 2px 2px 4px lightgray;
+  box-shadow: 2px 2px 4px darkgray;
+}
+
+.temple-card-info {
+  margin: 0.4rem;
 }
 
 /*----------- FORM --------------*/
@@ -225,27 +277,41 @@ form fieldset {
   /* border: 1px solid #445ba9; */
   /* border-radius: 10px; */
   /* padding: 0.5rem 2%; */
+  background: rgb(222, 203, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 203, 246, 1) 5%,
+    rgba(237, 220, 212, 1) 70%,
+    rgba(248, 241, 255, 1) 95%
+  );
+  box-shadow: 2px 2px 4px darkgrey;
+  border: 0.4rem double white;
+  padding: 0 1rem;
+  margin: 1rem 0;
 }
 
 form legend {
-  /* color: #445ba9; */
-  /* margin: 0 1rem; */
-  /* padding: 0 0.5rem; */
+  padding: 0.4rem;
+  background: #555;
+  color: white;
 }
 
 form label.top,
 form div {
-  /* display: block; */
+  display: block;
   /* padding-top: 1rem; */
   /* color: #9c2c13; */
   /* font-size: 0.8rem; */
+  text-align: left;
+  padding: 0.4rem 0;
 }
 
 form label.top input,
-form label.top select {
+form label.top select,
+form label.top textarea {
   /* -webkit-appearance: none; */
   /* display: block; */
-  /* font-size: 1rem; */
+  font-size: 1.2rem;
   /* border: solid 1px #999; */
   /* border-radius: 4px; */
   /* padding: 0.75rem; */
@@ -253,6 +319,10 @@ form label.top select {
   /* width: 100%; */
   /* max-width: 20rem; */
   /* background-color: rgba(0, 0, 0, 0.1); */
+  width: 97%;
+  border: none;
+  box-shadow: 2px 2px 4px darkgray;
+  padding: 0.4rem 0.2rem;
 }
 
 form label.sbs {
@@ -280,20 +350,118 @@ form label.top input:required:valid {
   /* border-left: green solid 6px; */
 }
 
-#current-weather div {
-  background-image: url("https://source.unsplash.com/400x300/?Bethesda,MD");
-  min-height: 300px;
-  max-width: 400px;
-  opacity: 0.75;
+#current-weather {
+  display: grid;
+}
+
+#current-weather div.backdrop {
+  background-image: url("../images/extras/oxon-hill-800.webp");
+  min-height: 25rem;
+  grid-row: 1/4;
+  grid-column: 1/2;
+}
+
+#current-weather div.forecast {
+  display: grid;
+  grid-row: 3/4;
+  grid-column: 1/2;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 0 0.8rem;
+}
+
+#current-date {
+  grid-row: 1/2;
+  grid-column: 1/5;
+  text-align: center;
+  margin: 0.4rem 0.8rem;
+}
+
+#current-weather div.forecast figure {
+  display: grid;
+  align-content: space-around;
+  justify-content: center;
+  grid-row: 2/4;
+  grid-column: 1/3;
+  margin: 0;
+}
+
+#current-weather div.forecast figure img {
+  grid-row: 1/3;
+  grid-column: 1/2;
+  margin: auto;
+  margin-top: 0.1rem;
+}
+
+.forecast figure figcaption {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  margin: 0.4rem 0;
+  text-align: center;
+}
+
+#weather-report h4 {
+  margin: 0;
+}
+
+#temp,
+#humid {
+  text-align: end;
+  margin: 0.4rem 0.8rem;
+  grid-column: 3/5;
+}
+
+#humid {
+  margin: 0.8rem;
+  margin-top: 0;
+}
+
+.card-3day {
+  background: rgb(222, 203, 246);
+  background: linear-gradient(
+    180deg,
+    rgba(222, 203, 246, 1) 5%,
+    rgba(237, 220, 212, 1) 70%,
+    rgba(248, 241, 255, 1) 95%
+  );
+  box-shadow: 2px 2px 4px darkgrey;
+  border: 0.4rem double white;
+  text-align: end;
+  padding: 0 1rem;
+  margin: 1rem 0.4rem;
+}
+
+article div img {
+  width: 4rem;
+  float: left;
 }
 
 /*----------- FOOTER --------------*/
 footer {
 }
 
+iframe {
+  width: 100%;
+  box-shadow: 2px 2px 4px darkgray;
+}
+
+.address-h {
+  font-family: "Noto Serif", serif;
+  padding: 0.4rem 0;
+  padding-bottom: 0;
+  font-size: 1.2rem;
+}
+
 .social {
   justify-self: end;
   background: #555;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.social a img {
+  width: 20%;
+  max-width: 2.4rem;
+  margin: 0.4rem 0.05rem;
 }
 
 #fb:hover {
@@ -320,6 +488,30 @@ footer {
 
 #pn:hover {
   background: #bd081c;
+}
+
+#about {
+  background: #555;
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 0.4rem;
+}
+
+.label {
+  text-align: center;
+}
+
+footer section address p,
+footer section address,
+footer section form {
+  margin: 0.4rem;
+  font-style: normal;
+}
+
+#lastModified {
+  margin: 1rem 0;
+  font-family: "Open Sans", sans-serif;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

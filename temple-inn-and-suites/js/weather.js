@@ -32,18 +32,24 @@ let weatherApp = {
     const report = description.split(" ");
 
     currentWeather.innerHTML = `
-      <div>
-        <figure>
-          <img
-            src="https://openweathermap.org/img/w/${icon}.png"
-            alt="image of current weather conditions"
-            id="weather-img"
-          />
-          <figcaption id="weather-report">${this.addCaps(report)}</figcaption>
-        </figure>
-        <h3 id="temp">${temp} °F</h3>
-        <h3 id="humid">Current humidity: ${humidity}%</h3>
-      </div>
+        <div class="backdrop"></div>
+        <div class="forecast">
+          <h4 id="current-date">
+            ${currentDate}
+          </h4>
+          <figure>
+            <img
+              src="https://openweathermap.org/img/w/${icon}.png"
+              alt="image of current weather conditions"
+              id="weather-img"
+            />
+            <figcaption id="weather-report"><h4>${this.addCaps(
+              report
+            )}</h4></figcaption>
+          </figure>
+          <h4 id="temp">Current Temp: <br>${temp} °F</h4>
+          <h4 id="humid">Current Humidity: <br>${humidity}%</h4>
+        </div>
       <hr />
     `;
     return data;
@@ -55,14 +61,12 @@ let weatherApp = {
       const { icon } = data.daily[idx].weather[0];
 
       card.innerHTML = `
-          <div class="card-3day" id="day${idx + 1}">
             <img
               src="https://openweathermap.org/img/w/${icon}.png"
               alt="image for 3-day forecast"
               id="weather-img-day${idx + 1}"
             />
-          <h4>Current temp: ${day} °F</h4>
-          </div>
+          <h4>Current temp: <br>${day} °F</h4>
         `;
     });
     return data;
@@ -89,7 +93,7 @@ let weatherApp = {
         // `
         weatherAlert[idx].innerHTML += `
         <div class="div-alert">
-          ***WEATHER ALERT*** ${event} <span ><button class="close-alert">X</button></span>
+          ***WEATHER ALERT*** ${event} <span ><button type="button" class="close-alert">X</button></span>
         </div>
       `;
         return data;

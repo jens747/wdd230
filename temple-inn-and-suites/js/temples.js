@@ -14,15 +14,18 @@ let templeCard = {
         const { name, address, email, phone, imgmain } = temple;
 
         templeDiv.innerHTML += `
-          <div class="temple-card">
+          <section class="temple-card">
             <picture>
               <img src="${imgmain}" alt="Image of ${name}"/>
             </picture>
-              <p>${name}</p>
-              <p>address: ${address}</p>
-              <p>email: ${email}</p>
-              <p>phone: ${phone}</p>
-          </div>
+              <h3>${name}</h3>
+              <h4 class="temple-card-info">Address</h4>
+              <p class="temple-card-info">${address}</p>
+              <h4 class="temple-card-info">Email</h4>
+              <p class="temple-card-info">${email}</p>
+              <h4 class="temple-card-info">Phone</h4>
+              <p class="temple-card-info">${phone}</p>
+          </section>
         `;
       });
     } catch (err) {

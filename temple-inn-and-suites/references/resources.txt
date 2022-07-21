@@ -3,4 +3,5 @@ Sources:
 2. Map data ©2022 Google
 3. Function removes leading zeroes: https://bobbyhadz.com/blog/javascript-get-minutes-with-leading-zero
 4. Temple data: https://www.churchofjesuschrist.org/temples/list?lang=eng
-5. 
+5. Weather image: Photo by <a href="https://unsplash.com/@glopater?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Gary Lopater</a> on <a href="https://unsplash.com/s/photos/maryland?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  

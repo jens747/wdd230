@@ -62,7 +62,47 @@ let currentMonth = dateObj.months[newDateObj.getMonth()];
 let currentDayOf = newDateObj.getDate();
 let currentYear = newDateObj.getFullYear();
 let currentTime = getCurrentTime(newDateObj);
+let currentDate = ` ${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear}`;
 let currentDateTime = ` ${currentDay}, ${currentMonth} ${currentDayOf}, ${currentYear} ${currentTime}`;
+
+function getNext3Days() {
+  let next3Days = [{}, {}, {}];
+
+  next3Days.forEach((day, idx) => {
+    let dayName = newDateObj.getDay() + idx + 1;
+    if (dayName >= 7) {
+      dayName = 0;
+    }
+
+    daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+    if (day.year % 4) {
+      daysInMonth[1] = 29;
+    }
+
+    dayMonth = newDateObj.getMonth();
+    dayMonNum = newDateObj.getDate() + idx + 1;
+
+    if (dayMonNum > daysInMonth[dayMonth]) {
+      dayMonNum -= daysInMonth[dayMonth];
+      dayMonth++;
+    }
+
+    day.name = dateObj.weekdays[dayName];
+    day.month = dateObj.months[dayMonth];
+    day.num = dayMonNum;
+    day.year = currentYear;
+
+    next3Days[idx] = `
+      ${day.name}, 
+      ${day.month} 
+      ${day.num}
+    `;
+  });
+  console.log(next3Days);
+
+  return next3Days;
+}
 
 // Variable used to insert date into webpage
 const copyrightYr = document.querySelector("#copyrightYr");
