@@ -156,10 +156,15 @@ nav ul li.active a {
 main {
 }
 
+#res-main p {
+  margin: 0 2rem;
+}
+
 main img {
   width: 100%;
 }
 
+form input#submitBtn,
 form input.submitBtn,
 #action,
 .thanks-btn {
@@ -189,6 +194,7 @@ form input.submitBtn,
   color: black;
 }
 
+form input#submitBtn:hover,
 form input.submitBtn:hover,
 #action:hover,
 .thanks-btn:hover {
@@ -272,6 +278,10 @@ hr {
 }
 
 /*----------- FORM --------------*/
+#res-form {
+  padding: 0.4rem;
+}
+
 form fieldset {
   /* margin: 2rem 0; */
   /* border: 1px solid #445ba9; */
@@ -323,6 +333,10 @@ form label.top textarea {
   border: none;
   box-shadow: 2px 2px 4px darkgray;
   padding: 0.4rem 0.2rem;
+}
+
+form label.top select {
+  width: 100%;
 }
 
 form label.sbs {
@@ -460,7 +474,8 @@ iframe {
 
 .social a img {
   width: 20%;
-  max-width: 2.4rem;
+  /* max-width: 3.2rem; */
+  max-width: 32px;
   margin: 0.4rem 0.05rem;
 }
 

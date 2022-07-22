@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a chain of hotels dedicated to support and service the needs of Temple patrons and workers, so they may visit the temple in comfort while they are away from home."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you for submitting your information.</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="star-favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="star-favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="star-favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Temple Inn & Suites</h1>
+      <div class="weather-alert"></div>
+      <a href="index.html">
+        <picture
+          ><img
+            src="images/logo/logo-img.webp"
+            alt="Temple Inn & Suites Logo"
+            id="logo"
+        /></picture>
+      </a>
+      <nav>
+        <ul class="nav-ul">
+          <li class="dropdown-nav">Menu</li>
+          <li><a class="left-nav" href="index.html">Home</a></li>
+          <li><a class="left-nav" href="temples.html">Temples</a></li>
+          <li>
+            <a class="right-nav" href="reservations.html">Reservations</a>
+          </li>
+          <li class="right-nav dropdown-nav dropdown-sub">Services</li>
+        </ul>
+        <ul class="subpage-ul dropdown-sub">
+          <li><a class="subpage" href="reception.html">Reception</a></li>
+          <li>
+            <a class="subpage" href="missionary.html"
+              >Full-Time Temple Missionary</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="res-main">
+      <picture>
+        <img
+          src="images/temples/saltlake/saltlake_temple_splash2.webp"
+          alt="Overhead view of Temple Square in Salt Lake City, UT, looking north west."
+        />
+      </picture>
+      <h1>Account Registration</h1>
+      <p>* indicates required.</p>
+      <form id="res-form" action="thanks.html" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label class="top"
+            ><span>First Name*</span
+            ><input type="text" name="fname" autofocus required
+          /></label>
+          <label class="top"
+            ><span>Last Name* </span><input type="text" name="lname" required
+          /></label>
+          <label class="top"
+            ><span>Email* </span
+            ><input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+              required
+          /></label>
+          <label class="top"
+            ><span>Phone* </span
+            ><input
+              type="tel"
+              name="phone"
+              id="phone-num"
+              placeholder="1235551234"
+              min="10"
+              required
+          /></label>
+          <div id="phn-alert"></div>
+          <label class="top" id="check-home"
+            ><span>Home State or Country*</span
+            ><input type="text" name="residence" id="residence" required
+          /></label>
+          <div id="msg-alert"></div>
+        </fieldset>
+        <fieldset>
+          <legend>Dates & Locations</legend>
+          <label class="top">
+            Locations
+            <select name="subject">
+              <option value="">Currently Available</option>
+              <option value="boise">Boise, ID</option>
+              <option value="johannesburg">Johannesburg, S. Africa</option>
+              <option value="logan">Logan, UT</option>
+              <option value="london">London, England</option>
+              <option value="mesa">Mesa, AZ</option>
+              <option value="nauvoo">Nauvoo, IL</option>
+              <option value="saltlake">Salt Lake City, UT</option>
+              <option value="sandiego">San Diego, CA</option>
+            </select>
+          </label>
+          <label class="top"
+            >Arrival Date <input type="date" name="arrivalDate"
+          /></label>
+          <label class="top"
+            >Departure Date <input type="date" name="departureDate"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Room Selection</legend>
+          <label class="top"
+            ><span>Standard</span
+            ><input
+              type="number"
+              name="standardRoom"
+              min="0"
+              max="12"
+              placeholder="0"
+          /></label>
+          <label class="top"
+            ><span>Family</span
+            ><input
+              type="number"
+              name="familyRoom"
+              min="0"
+              max="12"
+              placeholder="0"
+          /></label>
+          <label class="top"
+            ><span>Accessible</span
+            ><input
+              type="number"
+              name="accessibleRoom"
+              min="0"
+              max="12"
+              placeholder="0"
+          /></label>
+          <label class="top"
+            ><span>Extended Stay</span
+            ><input
+              type="number"
+              name="extendedRoom"
+              min="0"
+              max="12"
+              placeholder="0"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <legend>Special Accomodations</legend>
+          <label class="top"
+            ><span>Enter Instructions</span
+            ><textarea name="description" rows="5"></textarea>
+          </label>
+        </fieldset>
+
+        <input type="submit" value="Make Your Reservation" id="submitBtn" />
+      </form>
+    </main>
+    <hr />
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img id="fb" src="images/social/fb_mono.png" alt="Facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img id="ig" src="images/social/ig_mono.png" alt="Instagram icon"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img id="tw" src="images/social/tw_mono.png" alt="Twitter icon"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img id="yt" src="images/social/yt_mono.png" alt="YouTube icon"
+        /></a>
+        <a href="https://www.pinterest.com/" target="_blank"
+          ><img id="pn" src="images/social/pn_mono.png" alt="Pintrest icon"
+        /></a>
+      </div>
+      <section>
+        <h2>Contact Us</h2>
+        <address>
+          <!-- Small 400x300 Google map -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <!-- Small 200x200 square Map -->
+          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <p class="address-h">Address</p>
+          <p>Temple Inn & Suites</p>
+          <p>4800 Montgomery Ln # 300</p>
+          <p>Bethesda, MD 20814</p>
+          <p class="address-h">Phone</p>
+          <p>555-123-4567</p>
+          <p class="address-h">Email</p>
+          <p>
+            <a href="reservations.html">contact@templeinnandsuites.com</a>
+          </p>
+        </address>
+        <form action="thanks.html" method="get">
+          <fieldset>
+            <legend>Request for Information</legend>
+            <label class="top"
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              ><span>Message</span
+              ><textarea name="description" rows="5"></textarea>
+            </label>
+
+            <input type="submit" value="Send your request" class="submitBtn" />
+          </fieldset>
+        </form>
+        <div id="about">
+          <p>
+            Temple Inn & Suites &copy;
+            <span id="copyrightYr"></span>
+          </p>
+          <p>Joel Jensen</p>
+          <p>BYU-Idaho</p>
+          <p>WDD 230</p>
+          <div id="lastModified">Last Modified:</div>
+        </div>
+        <p class="label">
+          Weather data provided by:
+          <a class="label" href="https://openweathermap.org/" target="_blank"
+            >openweathermap.org</a
+          >
+        </p>
+      </section>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/date.js"></script>
+    <script src="js/form.js"></script>
+  </body>
+</html>
