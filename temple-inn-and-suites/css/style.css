@@ -167,6 +167,7 @@ main img {
 form input#submitBtn,
 form input.submitBtn,
 #action,
+.act-btn,
 .thanks-btn {
   background: var(--greenco);
   padding: 0.4rem 1rem;
@@ -178,6 +179,7 @@ form input.submitBtn,
 }
 
 #action,
+.act-btn,
 .thanks-btn {
   text-decoration: none;
   color: black;
@@ -189,6 +191,8 @@ form input.submitBtn,
 
 #action:visited,
 #action:active,
+.act-btn:visited,
+.act-btn:active,
 .thanks-btn:visited,
 .thanks-btn:active {
   color: black;
@@ -197,6 +201,7 @@ form input.submitBtn,
 form input#submitBtn:hover,
 form input.submitBtn:hover,
 #action:hover,
+.act-btn:hover,
 .thanks-btn:hover {
   background: var(--violetco);
   cursor: pointer;
@@ -527,6 +532,22 @@ footer section form {
 #lastModified {
   margin: 1rem 0;
   font-family: "Open Sans", sans-serif;
+}
+
+/* ==================================== */
+/* ==========missionary.html=========== */
+/* ==================================== */
+#mission-main h2,
+#mission-main p {
+  margin: 1rem 0.4rem;
+}
+
+#mission-main img {
+  width: 400px;
+  max-width: 96%;
+  padding: 0.2rem 0.4rem;
+  margin: auto;
+  display: block;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/

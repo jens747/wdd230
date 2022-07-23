@@ -1,26 +1,9 @@
 const dropdown = document.querySelectorAll(".dropdown-nav");
-const dropsub = document.querySelectorAll(".dropdown-sub");
-const subpage = document.querySelectorAll(".subpage");
 const navul = document.querySelectorAll(".nav-ul");
-const subpageul = document.querySelectorAll(".subpage-ul");
 
-dropdown.forEach((list, index) => {
-  list.addEventListener("click", () => {
-    list.classList.toggle("close-nav");
-    if (!dropdown[0].classList.contains("close-nav"))
-      dropdown[1].classList.remove("close-nav");
-    // if (index <= 0)
-      navul[index].classList.toggle("open-nav");
-    dropsub.forEach(item => {
-      item.classList.remove("open-sub");
-    })
-  });
-});
-
-dropsub[0].addEventListener("click", () => {
-  dropsub.forEach(item => {
-    item.classList.toggle("open-sub");
-  })
+dropdown[0].addEventListener("click", () => {
+  dropdown[0].classList.toggle("close-nav");
+  navul[0].classList.toggle("open-nav");
 });
 
 // dropsub.forEach((item, idx) => {
@@ -38,9 +21,3 @@ dropsub[0].addEventListener("click", () => {
 //     })
 //   })
 // })
-
-// loadJoin.forEach((loader) => {
-//   loader.addEventListener("click", function() {
-//     document.location.href="join.html";
-//   });
-// });
