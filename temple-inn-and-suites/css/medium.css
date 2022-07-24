@@ -1,4 +1,4 @@
-/* 35em is also 640px (if basefont is 16px) */
+/* 40em is also 640px (if basefont is 16px) */
 @media only screen and (min-width: 40rem) {
   /*----------- BODY --------------*/
 
@@ -9,7 +9,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 3rem;
-    /* align-items: center; */
   }
   nav ul li {
     width: auto;
@@ -17,11 +16,6 @@
   }
   nav ul li:first-child {
     display: none;
-  }
-  nav ul li:last-child a {
-  }
-  nav ul li a {
-    /* padding: 0.5rem 1rem; */
   }
 
   /*----------- MAIN --------------*/
@@ -108,13 +102,6 @@
     grid-column: 1/5;
     margin-left: 0;
     padding-left: 0;
-  }
-
-  .freebies {
-    /* text-align: center;
-    padding: 0.4rem;
-    border: 0.4rem double white;
-    background: var(--tancolt); */
   }
 
   .freebies:nth-of-type(odd) {

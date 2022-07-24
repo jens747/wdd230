@@ -55,8 +55,8 @@
           }
         ]
       },
-      "imgmain": "images/temples/boise/boise_temple_main_webp800.webp",
-      "imgalternate": "images/temples/boise/boise_temple_alt_webp600.webp"
+      "imgmain": "images/temples/boise/boise_temple_main_webp400.webp",
+      "imgalternate": "images/temples/boise/boise_temple_alt_webp300.webp"
     },
     "Logan": {
       "name": "Logan Utah Temple",
@@ -110,8 +110,8 @@
           }
         ]
       },
-      "imgmain": "images/temples/logan/logan_temple_main_webp800.webp",
-      "imgalternate": "images/temples/logan/logan_temple_alt_webp600.webp"
+      "imgmain": "images/temples/logan/logan_temple_main_webp400.webp",
+      "imgalternate": "images/temples/logan/logan_temple_alt_webp300.webp"
     },
     "Mesa": {
       "name": "Mesa Arizona Temple",
@@ -168,8 +168,8 @@
           }
         ]
       },
-      "imgmain": "images/temples/mesa/mesa_temple_main_webp800.webp",
-      "imgalternate": "images/temples/mesa/mesa_temple_alt_webp600.webp"
+      "imgmain": "images/temples/mesa/mesa_temple_main_webp400.webp",
+      "imgalternate": "images/temples/mesa/mesa_temple_alt_webp300.webp"
     },
     "San Diego": {
       "name": "San Diego California Temple",
@@ -206,8 +206,8 @@
         },
         "Rededicated": []
       },
-      "imgmain": "images/temples/sandiego/sandiego_temple_main_webp800.webp",
-      "imgalternate": "images/temples/sandiego/sandiego_temple_alt_webp600.webp"
+      "imgmain": "images/temples/sandiego/sandiego_temple_main_webp400.webp",
+      "imgalternate": "images/temples/sandiego/sandiego_temple_alt_webp300.webp"
     }
   }
 }

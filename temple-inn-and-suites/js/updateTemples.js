@@ -59,27 +59,6 @@ let addTempleCard = {
         `;
         let listServices = services.join("<br>");
 
-        // let secElement = document.createElement("section");
-        // secElement.classList.add("temple-card");
-
-        // let element = document.createElement("button");
-        // element.innerText = "Like";
-        // element.classList.add("like-temple");
-
-        // templeDiv.appendChild(secElement);
-        // secElement.appendChild(element);
-
-        // element.addEventListener("click", () => {
-        //   // if (window.localStorage.getItem("like") == "true") {
-        //   //   window.localStorage.setItem("like", "false");
-        //   // } else {
-        //   //   window.localStorage.setItem("like", "true");
-        //   // }
-        //   console.log("click");
-        //   window.localStorage.setItem("like", "true");
-        //   element.classList.toggle("unlike-temple");
-        // });
-
         templeCardDiv[idx].innerHTML += `
             <picture>
               <img src="${imgmain}" alt="Image of ${name}"/>

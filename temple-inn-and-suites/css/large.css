@@ -1,4 +1,4 @@
-/* 64em is also 1028px (if basefont is 16px) */
+/* 52em is also 832px (if basefont is 16px) */
 @media only screen and (min-width: 52rem) {
   /*----------- BODY --------------*/
 

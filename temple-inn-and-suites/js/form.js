@@ -5,7 +5,6 @@ const phnAlert = document.querySelector("#phn-alert");
 
 function chkInput() {
   let regex = chkHome.value;
-  console.log(regex);
   if (regex.match(/^[-a-zA-Z() ]+$/)) {
     msgAlert.style.display = "none";
     msgAlert.textContent = "";

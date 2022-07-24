@@ -55,7 +55,6 @@ let weatherApp = {
     return data;
   },
   display3Day: function (data) {
-    console.log(data);
     card3Day.forEach((card, idx) => {
       const { day } = data.daily[idx].temp;
       const { icon } = data.daily[idx].weather[0];

@@ -99,7 +99,6 @@ function getNext3Days() {
       ${day.num}
     `;
   });
-  console.log(next3Days);
 
   return next3Days;
 }
