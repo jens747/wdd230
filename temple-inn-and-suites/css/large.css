@@ -1,29 +1,47 @@
 /* 64em is also 1028px (if basefont is 16px) */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 52rem) {
+  /*----------- BODY --------------*/
 
-    header, nav, main, footer {
-        max-width: 64rem;
-        margin:auto;
-    }
+  /*----------- HEADER --------------*/
 
-/*----------- BODY --------------*/
+  /*----------- NAVIGATION --------------*/
 
+  /*----------- MAIN --------------*/
 
+  /* ==================================== */
+  /* ===========services.html============ */
+  /* ==================================== */
+  .services-img {
+    float: right;
+    width: 45%;
+  }
 
-/*----------- HEADER --------------*/
+  #services-subpage-div {
+    display: grid;
+  }
 
+  #services-subpage-div section:nth-of-type(odd) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 
+  #services-subpage-div section:nth-of-type(even) {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-/*----------- NAVIGATION --------------*/
+  #services-subpage-div section:nth-of-type(even) img {
+    margin-bottom: 1.84rem;
+  }
 
+  #services-subpage-div section h3 {
+    border: 0.4rem double var(--greenco);
+    background: white;
+    height: 1.5rem;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    margin-top: 0;
+  }
 
-
-/*----------- MAIN --------------*/
-    form label.sbs {
-        padding: .4rem 0;
-    }
-
-
-/*----------- FOOTER --------------*/
-    
+  /*----------- FOOTER --------------*/
 } /* end of media query */

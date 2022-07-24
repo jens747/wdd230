@@ -1,27 +1,318 @@
-/* 35em is also 560px (if basefont is 16px) */
-@media only screen and (min-width: 35rem) {
+/* 35em is also 640px (if basefont is 16px) */
+@media only screen and (min-width: 40rem) {
+  /*----------- BODY --------------*/
 
+  /*----------- HEADER --------------*/
 
-/*----------- BODY --------------*/
+  /*----------- NAVIGATION --------------*/
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 3rem;
+    /* align-items: center; */
+  }
+  nav ul li {
+    width: auto;
+    padding: 1rem;
+  }
+  nav ul li:first-child {
+    display: none;
+  }
+  nav ul li:last-child a {
+  }
+  nav ul li a {
+    /* padding: 0.5rem 1rem; */
+  }
 
+  /*----------- MAIN --------------*/
+  #weather-idx {
+    display: grid;
+    gap: 1rem;
+    margin: 0.4rem;
+    border: 0.4rem groove var(--violetco);
+    box-shadow: 2px 2px 4px darkgrey;
+  }
 
+  #weather-idx h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
 
-/*----------- HEADER --------------*/
+  #current-weather {
+    padding: 0 0.4rem;
+  }
 
+  #weather-idx h3 {
+    grid-row: 1;
+    grid-column: 2/3;
+  }
 
+  #weather-3day {
+    grid-column: 2/3;
+  }
 
-/*----------- NAVIGATION --------------*/
-    nav ul {margin-left: 2%;}
-    nav ul li {width: auto;}
-    nav ul li:first-child a {border-left: 1px solid #777;}
-    nav ul li:last-child a {border-right: 1px solid #777;}
-    nav ul li a{padding: .5rem 1rem;}
+  form label.top input,
+  form label.top select,
+  form label.top textarea {
+    width: 99%;
+  }
 
+  .card-3day {
+    max-height: 6rem;
+  }
 
-/*----------- MAIN --------------*/
+  form label.top select {
+    height: 2.8rem;
+    width: 100%;
+  }
 
+  /* ==================================== */
+  /* ===========services.html============ */
+  /* ==================================== */
+  #services-main p {
+    padding: 0 0.4rem;
+  }
 
+  #services-subpage-div section {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto;
+    border: 0.4rem double white;
+    background: white;
+    box-shadow: 2px 2px 4px darkgrey;
+  }
 
-/*----------- FOOTER --------------*/
-    
+  #services-subpage-div section h3 {
+    border: 0.4rem double var(--greenco);
+    background: white;
+    height: 1.5rem;
+    padding: 0.4rem;
+    margin: 0.4rem 0;
+    margin-top: 0;
+  }
+
+  .card-item {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #services-free-sec {
+    display: grid;
+    gap: 0.4rem;
+    padding: 0.8rem 0.4rem;
+  }
+
+  #services-free-sec h2,
+  #services-free-sec p {
+    grid-column: 1/5;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .freebies {
+    /* text-align: center;
+    padding: 0.4rem;
+    border: 0.4rem double white;
+    background: var(--tancolt); */
+  }
+
+  .freebies:nth-of-type(odd) {
+    grid-column: 1/3;
+  }
+
+  .freebies:nth-of-type(even) {
+    grid-column: 3/5;
+  }
+
+  /* ==================================== */
+  /* ===========reception.html=========== */
+  /* ==================================== */
+  #reception-main {
+    max-width: 80%;
+    display: block;
+    margin: 1rem auto;
+  }
+
+  #reception-main p {
+    padding: 0 0.4rem;
+  }
+
+  /* ==================================== */
+  /* ===========reception.html=========== */
+  /* ==================================== */
+  #bedroom-sec,
+  #bathroom-sec,
+  #kitchen-sec {
+    display: grid;
+  }
+
+  #bedroom-sec h2 {
+    grid-row: 1/2;
+    grid-column: 1/8;
+  }
+
+  #bedroom-sec picture:nth-child(2) {
+    grid-row: 2/4;
+    grid-column: 4/6;
+  }
+
+  #bedroom-sec picture:nth-child(3) {
+    grid-row: 4/6;
+    grid-column: 2/4;
+  }
+
+  #bedroom-sec picture:nth-child(4) {
+    grid-row: 4/6;
+    grid-column: 4/6;
+  }
+
+  #bedroom-sec picture:nth-child(5) {
+    grid-row: 6/7;
+    grid-column: 3/7;
+  }
+
+  #bedroom-sec picture:nth-child(6) {
+    grid-row: 2/7;
+    grid-column: 6/8;
+    margin-top: 5rem;
+  }
+
+  #bathroom-sec h2 {
+    grid-column: 1/5;
+    grid-row: 1;
+  }
+
+  #bathroom-sec picture:nth-child(2) {
+    grid-row: 2;
+    margin-top: 2rem;
+    grid-column: 1/3;
+    margin-left: 4rem;
+    margin-bottom: 0.6rem;
+  }
+
+  #bathroom-sec picture:nth-child(3) {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    margin-left: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  #bathroom-sec picture:nth-child(4) {
+    grid-row: 2/4;
+    grid-column: 3/5;
+  }
+
+  #kitchen-sec h2 {
+    grid-column: 1/4;
+    grid-row: 1;
+  }
+
+  #kitchen-sec picture:nth-child(2) {
+    grid-row: 6/8;
+    grid-column: 1/2;
+  }
+
+  #kitchen-sec picture:nth-child(3) {
+    grid-row: 5/9;
+    grid-column: 2/3;
+  }
+
+  #kitchen-sec picture:nth-child(4) {
+    grid-row: 6/8;
+    grid-column: 3/4;
+  }
+
+  #kitchen-sec picture:nth-child(5) {
+    grid-row: 8/10;
+    grid-column: 1/2;
+  }
+
+  #kitchen-sec picture:nth-child(6) {
+    grid-row: 9/11;
+    grid-column: 2/3;
+  }
+
+  #kitchen-sec picture:nth-child(7) {
+    grid-row: 8/10;
+    grid-column: 3/4;
+  }
+
+  #lounge-sec {
+    display: grid;
+    gap: 1rem;
+  }
+
+  #lounge-sec h2 {
+    grid-row: 1/2;
+    grid-column: 1/7;
+  }
+
+  #lounge-sec picture:nth-child(2) {
+    grid-row: 2/6;
+    grid-column: 1/3;
+  }
+
+  #lounge-sec picture:nth-child(3) {
+    grid-row: 2/4;
+    grid-column: 3/5;
+  }
+
+  #lounge-sec picture:nth-child(4) {
+    grid-row: 3/8;
+    grid-column: 5/7;
+  }
+
+  #lounge-sec picture:nth-child(5) {
+    grid-row: 3/5;
+    grid-column: 3/5;
+    margin-top: -8rem;
+  }
+
+  #lounge-sec picture:nth-child(6) {
+    grid-row: 3/7;
+    grid-column: 1/3;
+  }
+
+  #lounge-sec picture:nth-child(7) {
+    grid-column: 3/5;
+    grid-row: 5/6;
+  }
+
+  #lounge-sec picture:nth-child(8) {
+    grid-column: 5/7;
+    grid-row: 2;
+  }
+
+  /*----------- FOOTER --------------*/
+  footer section {
+    display: grid;
+    padding: 0 0.4rem;
+  }
+
+  footer section h2 {
+    grid-row: 1;
+    grid-column: 1/5;
+    text-align: center;
+  }
+
+  footer section address {
+    grid-column: 1/3;
+    margin-top: 2rem;
+  }
+
+  footer section address iframe {
+    border: 0;
+    width: 224px;
+    height: 224px;
+  }
+
+  footer section form {
+    grid-column: 3/5;
+  }
+
+  #about,
+  footer section p.label {
+    grid-column: 1/5;
+  }
 } /* end of media query */

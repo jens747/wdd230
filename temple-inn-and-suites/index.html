@@ -141,9 +141,17 @@
     </header>
     <main>
       <picture>
+        <source
+          media="(max-width: 400px)"
+          srcset="images/temples/saltlake/saltlake_temple_day400.webp"
+        />
+        <source
+          media="(max-width: 800px)"
+          srcset="images/temples/saltlake/saltlake_temple_day800.webp"
+        />
         <img
           src="images/temples/saltlake/saltlake_temple_splash.webp"
-          alt="Overhead view of Temple Square in Salt Lake City, UT, looking north west."
+          alt="An image of the Salt Lake Temple"
         />
       </picture>
       <!-- <button type="button" id="action">Make a Reservation</button> -->
@@ -181,11 +189,11 @@
         </ul>
       </section>
       <hr />
-      <section>
+      <section id="temple-idx">
         <h2>Featured Temples</h2>
         <div class="temple-div"></div>
       </section>
-      <section>
+      <section id="weather-idx">
         <h2>Weather Forecast</h2>
         <article id="current-weather">...loading</article>
         <h3>3-day Forecast</h3>
@@ -219,7 +227,7 @@
         <h2>Contact Us</h2>
         <address>
           <!-- Small 400x300 Google map -->
-          <iframe
+          <!-- <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus"
             width="400"
             height="300"
@@ -227,7 +235,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> -->
           <!-- Bing static map with link -->
           <!-- <a
             href="https://www.bing.com/maps?osid=9b1d6a20-3b5e-4c83-9113-c71bf73af2fe&cp=38.983335~-77.096927&lvl=18&v=2&sV=2&form=S00027"
@@ -249,6 +257,11 @@
           /></a> -->
           <!-- Small 200x200 square Map -->
           <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <a href="https://www.google.com/maps/place/38.9832054,-77.0955931/"
+            ><img
+              src="images/extras/map-shadow234.webp"
+              alt="Google Map of Temple Inn & Suites HQ"
+          /></a>
           <p class="address-h">Address</p>
           <p>Temple Inn & Suites</p>
           <p>4800 Montgomery Ln # 300</p>

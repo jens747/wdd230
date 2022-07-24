@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="The Temple Inn & Suites is a chain of hotels dedicated to support and service the needs of Temple patrons and workers, so they may visit the temple in comfort while they are away from home."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank you for submitting your information.</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="star-favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="star-favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="star-favicon/favicon-16x16.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Temple Inn & Suites</h1>
+      <div class="weather-alert"></div>
+      <a href="index.html">
+        <picture
+          ><img
+            src="images/logo/logo-img.webp"
+            alt="Temple Inn & Suites Logo"
+            id="logo"
+        /></picture>
+      </a>
+      <nav>
+        <ul class="nav-ul">
+          <li class="dropdown-nav">Menu</li>
+          <li><a class="left-nav" href="index.html">Home</a></li>
+          <li><a class="left-nav" href="temples.html">Temples</a></li>
+          <li>
+            <a class="right-nav" href="reservations.html">Reservations</a>
+          </li>
+          <li>
+            <a class="right-nav" href="services.html">Services</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="temple-main">
+      <picture>
+        <source
+          media="(max-width: 400px)"
+          srcset="images/temples/saltlake/north_gate400.webp"
+        />
+        <source
+          media="(max-width: 800px)"
+          srcset="images/temples/saltlake/north_gate800.webp"
+        />
+        <img
+          src="images/temples/saltlake/saltlake_temple_splash3.webp"
+          alt="An image of the Salt Lake Temple"
+        />
+      </picture>
+      <h1>Temple Sites</h1>
+      <article>
+        <h2>Gain New Temple Insights</h2>
+        <p>
+          This page provides address and contact information on the Temples that
+          operate within our vicinity.
+        </p>
+        <p>
+          Here you can gather more information about Temple operations including
+          ordinances and session schedules, as well as operations and closures
+          in order to coordinate your reservation with the Temple operating
+          schedule.
+        </p>
+        <p>
+          In addition to this, you can also "like" your favorite Temples to save
+          for future sessions.
+        </p>
+        <button id="likeSL" class="unlike-temple">like</button>
+      </article>
+      <div class="temple-div">
+        <section class="temple-card">
+          <button id="like-boise" class="like-temple">Like</button>
+          <div class="temple-card-div"></div>
+        </section>
+        <section class="temple-card">
+          <button id="like-logan" class="like-temple">Like</button>
+          <div class="temple-card-div"></div>
+        </section>
+        <section class="temple-card">
+          <button id="like-mesa" class="like-temple">Like</button>
+          <div class="temple-card-div"></div>
+        </section>
+        <section class="temple-card">
+          <button id="like-sandiego" class="like-temple">Like</button>
+          <div class="temple-card-div"></div>
+        </section>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <div class="social">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><img id="fb" src="images/social/fb_mono.png" alt="Facebook icon"
+        /></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><img id="ig" src="images/social/ig_mono.png" alt="Instagram icon"
+        /></a>
+        <a href="https://twitter.com/" target="_blank"
+          ><img id="tw" src="images/social/tw_mono.png" alt="Twitter icon"
+        /></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><img id="yt" src="images/social/yt_mono.png" alt="YouTube icon"
+        /></a>
+        <a href="https://www.pinterest.com/" target="_blank"
+          ><img id="pn" src="images/social/pn_mono.png" alt="Pintrest icon"
+        /></a>
+      </div>
+      <section>
+        <h2>Contact Us</h2>
+        <address>
+          <a href="https://www.google.com/maps/place/38.9832054,-77.0955931/"
+            ><img
+              src="images/extras/map-shadow234.webp"
+              alt="Google Map of Temple Inn & Suites HQ"
+          /></a>
+          <p class="address-h">Address</p>
+          <p>Temple Inn & Suites</p>
+          <p>4800 Montgomery Ln # 300</p>
+          <p>Bethesda, MD 20814</p>
+          <p class="address-h">Phone</p>
+          <p>555-123-4567</p>
+          <p class="address-h">Email</p>
+          <p>
+            <a href="reservations.html">contact@templeinnandsuites.com</a>
+          </p>
+        </address>
+        <form action="thanks.html" method="get">
+          <fieldset>
+            <legend>Request for Information</legend>
+            <label class="top"
+              >First Name* <input type="text" name="fname" required
+            /></label>
+            <label class="top"
+              >Last Name* <input type="text" name="lname" required
+            /></label>
+            <label class="top"
+              >Email*
+              <input
+                type="email"
+                name="email"
+                placeholder="someone@gmail.com"
+                required
+            /></label>
+            <label class="top"
+              ><span>Message</span
+              ><textarea name="description" rows="5"></textarea>
+            </label>
+
+            <input type="submit" value="Send your request" class="submitBtn" />
+          </fieldset>
+        </form>
+        <div id="about">
+          <p>
+            Temple Inn & Suites &copy;
+            <span id="copyrightYr"></span>
+          </p>
+          <p>Joel Jensen</p>
+          <p>BYU-Idaho</p>
+          <p>WDD 230</p>
+          <div id="lastModified">Last Modified:</div>
+        </div>
+        <p class="label">
+          Weather data provided by:
+          <a class="label" href="https://openweathermap.org/" target="_blank"
+            >openweathermap.org</a
+          >
+        </p>
+      </section>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/updateTemples.js"></script>
+    <script src="js/likes.js"></script>
+    <script src="js/date.js"></script>
+  </body>
+</html>

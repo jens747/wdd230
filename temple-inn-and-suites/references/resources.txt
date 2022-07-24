@@ -38,4 +38,4 @@ Sources:
 37. wood_lounge: Photo by <a href="https://unsplash.com/@fromitaly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Francesca Tosolini</a> on <a href="https://unsplash.com/s/photos/easy-chair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 38. tweed_kitchenette: Photo by <a href="https://unsplash.com/@fromitaly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Francesca Tosolini</a> on <a href="https://unsplash.com/s/photos/easy-chair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 39. pine_kitchenette: Photo by <a href="https://unsplash.com/@fromitaly?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Francesca Tosolini</a> on <a href="https://unsplash.com/s/photos/easy-chair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-40. 
+40. CSS scrollbehavior: https://css-tricks.com/snippets/jquery/smooth-scrolling/

@@ -9,7 +9,7 @@ let templeCard = {
       const templeObj = await res.json();
       const temples = templeObj["temples"];
 
-      console.log(temples);
+      // console.log(temples);
       Object.values(temples).forEach((temple) => {
         const { name, address, email, phone, imgmain } = temple;
 
@@ -34,4 +34,4 @@ let templeCard = {
   },
 };
 
-templeCard.fetchTemples();
+const templeData = templeCard.fetchTemples();

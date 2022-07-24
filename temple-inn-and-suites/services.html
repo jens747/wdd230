@@ -70,8 +70,19 @@
     <main id="services-main">
       <h1>Services & Amenities</h1>
       <picture>
+        <source
+          class="services-img"
+          media="(max-width: 359px)"
+          srcset="images/hotel/reception400.webp"
+        />
+        <source
+          class="services-img"
+          media="(max-width: 800px)"
+          srcset="images/hotel/reception800.webp"
+        />
         <img
-          src="images/hotel/reception800.webp"
+          class="services-img"
+          src="images/hotel/reception400.webp"
           alt="Man standing at hotel reception desk with woman asisting"
         />
       </picture>
@@ -102,40 +113,49 @@
           Inn & Suites.
         </p>
       </article>
-      <section>
-        <h3>Wedding Receptions</h3>
-        <picture>
-          <img
-            src="images/wedding/couple_moroni800.webp"
-            alt="Overhead view of Temple Square in Salt Lake City, UT, looking north west."
-          />
-        </picture>
-        <p>
-          We provide special accomodations for recently sealed couples wishing
-          to hold ceremonies or receptions around Temple grounds.
-        </p>
-        <a class="act-btn" href="reception.html">Explore Wedding Receptions</a>
-      </section>
-      <section>
-        <h3>Extended Stay for Temple Missionaries</h3>
-        <picture>
-          <img
-            src="images/hotel/missionary_couple800.webp"
-            alt="husband and wife missionary couple"
-          />
-        </picture>
-        <p>
-          A selection of extended stay suites are available to Temple
-          missionaries who may be transitioning into or away from full-time
-          Temple service.
-        </p>
-        <a class="act-btn" href="missionary.html">View Extended Stay Options</a>
-      </section>
+      <div id="services-subpage-div">
+        <section>
+          <h3>Wedding Receptions</h3>
+          <picture>
+            <img
+              src="images/wedding/couple_moroni800.webp"
+              alt="Overhead view of Temple Square in Salt Lake City, UT, looking north west."
+            />
+          </picture>
+          <p>
+            We provide special accomodations for recently sealed couples wishing
+            to hold ceremonies or receptions around Temple grounds.
+          </p>
+          <a class="act-btn" href="reception.html"
+            >Explore Wedding Receptions</a
+          >
+        </section>
+        <section>
+          <h3>Missionary Extended Stay</h3>
+          <picture>
+            <img
+              src="images/hotel/missionary_couple800.webp"
+              alt="husband and wife missionary couple"
+            />
+          </picture>
+          <p>
+            A selection of extended stay suites are available to Temple
+            missionaries who may be transitioning into or away from full-time
+            Temple service.
+          </p>
+          <a class="act-btn" href="missionary.html"
+            >View Extended Stay Options</a
+          >
+        </section>
+      </div>
+
       <section id="change-room" class="card-item">
         <h3>Changing Rooms</h3>
         <picture>
           <img
-            src="images/hotel/temple_room400.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/hotel/temple_room800.webp"
             alt="a waiting room in the Ogden Temple"
           />
         </picture>
@@ -150,7 +170,9 @@
         </p>
         <picture>
           <img
-            src="images/hotel/mesa_temple800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/hotel/mesa_temple800.webp"
             alt="room in the Mesa Arizona Temple"
           />
         </picture>
@@ -164,7 +186,9 @@
         </p>
         <picture>
           <img
-            src="images/daycare/play-room800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/daycare/play-room400.webp"
             alt="image of a playroom facility"
           />
         </picture>
@@ -177,16 +201,20 @@
         </p>
         <picture>
           <img
-            src="images/daycare/play-doh400.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/daycare/play-doh400.webp"
             alt="a play set for children"
           />
         </picture>
       </section>
-      <section>
+      <section id="family-history" class="card-item">
         <h3>Family History Center</h3>
         <picture>
           <img
-            src="images/hotel/reception_hall800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/hotel/reception_hall800.webp"
             alt="a reception desk"
           />
         </picture>
@@ -199,7 +227,9 @@
         </p>
         <picture>
           <img
-            src="images/hotel/sitting_area800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/hotel/sitting_area800.webp"
             alt="a large sitting area with couches, tables, and chairs"
           />
         </picture>
@@ -209,7 +239,7 @@
           conferences, gathering activities, or family members.
         </p>
       </section>
-      <section>
+      <section id="history-museum" class="card-item">
         <h3>Temple History Museum</h3>
         <p>
           Our Temple History Museum is set up to provide patrons with a glimpse
@@ -223,7 +253,9 @@
         </p>
         <picture>
           <img
-            src="images/history/church_history_room800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/history/church_history_room400.webp"
             alt="a museum hall with exhibits lining the walls"
           />
         </picture>
@@ -234,7 +266,9 @@
         </p>
         <picture>
           <img
-            src="images/history/history_museum_store800.webp"
+            class="lazy-load"
+            src="images/extras/placeholder-300.webp"
+            data-src="images/history/history_museum_store800.webp"
             alt="a small gift shop whith items lining the shelves"
           />
         </picture>
@@ -243,7 +277,7 @@
           selection of items to fulfill the basic needs of Temple patrons.
         </p>
       </section>
-      <section>
+      <section id="services-free-sec">
         <h2>Free Amenities</h2>
         <p>
           Also available is a selection of free amenities offered to all
@@ -253,7 +287,9 @@
           <p>Continental Breakfast</p>
           <picture>
             <img
-              src="images/hotel/hotel_breakfast800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/hotel/hotel_breakfast800.webp"
               alt="a continental hotel breakfast"
             />
           </picture>
@@ -262,7 +298,9 @@
           <p>Exercise Room</p>
           <picture>
             <img
-              src="images/gym/gym-dumbells800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/gym/gym-dumbells400.webp"
               alt="weights in a gym with woman lifting weights in background"
             />
           </picture>
@@ -271,7 +309,9 @@
           <p>Indoor Pool</p>
           <picture>
             <img
-              src="images/pool/indoor_pool800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/pool/indoor_pool400.webp"
               alt="view of an indoor pool"
             />
           </picture>
@@ -280,7 +320,9 @@
           <p>Wi-Fi Access</p>
           <picture>
             <img
-              src="images/hotel/extended_wifi800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/hotel/extended_wifi400.webp"
               alt="over-the-shoulder view of person at laptop with phone"
             />
           </picture>
@@ -289,7 +331,9 @@
           <p>Smart TV Entertainment</p>
           <picture>
             <img
-              src="images/hotel/extended_smart_tv800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/hotel/extended_smart_tv400.webp"
               alt="view of entertainment center"
             />
           </picture>
@@ -298,14 +342,15 @@
           <p>Temple Shuttle & Parking</p>
           <picture>
             <img
-              src="images/hotel/extended_shuttle800.webp"
+              class="lazy-load"
+              src="images/extras/placeholder-300.webp"
+              data-src="images/hotel/extended_shuttle400.webp"
               alt="side view of shuttle bus"
             />
           </picture>
         </div>
       </section>
     </main>
-    <hr />
     <footer>
       <div class="social">
         <a href="https://www.facebook.com/" target="_blank"
@@ -327,18 +372,11 @@
       <section>
         <h2>Contact Us</h2>
         <address>
-          <!-- Small 400x300 Google map -->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus"
-            width="400"
-            height="300"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-          <!-- Small 200x200 square Map -->
-          <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3101.405018805796!2d-77.09772048255616!3d38.983251800000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7c97b6b3b5b43%3A0xceab47cd19a23a3b!2s4800%20Montgomery%20Ln%2C%20Bethesda%2C%20MD%2020814!5e0!3m2!1sen!2sus!4v1658087894960!5m2!1sen!2sus" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <a href="https://www.google.com/maps/place/38.9832054,-77.0955931/"
+            ><img
+              src="images/extras/map-shadow234.webp"
+              alt="Google Map of Temple Inn & Suites HQ"
+          /></a>
           <p class="address-h">Address</p>
           <p>Temple Inn & Suites</p>
           <p>4800 Montgomery Ln # 300</p>
@@ -394,6 +432,7 @@
       </section>
     </footer>
     <script src="js/menu.js"></script>
+    <script src="js/lazy.js"></script>
     <script src="js/date.js"></script>
   </body>
 </html>
