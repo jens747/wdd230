@@ -83,11 +83,9 @@ let weatherApp = {
     try {
       const { alerts } = data;
       alerts.forEach((card, idx) => {
-        const { description, event, sender_name } = data.alerts[idx];
+        const { event } = card;
 
-        weatherAlert[idx].innerHTML += `
-           <button type="button" class="btn-alert">**WEATHER ALERT** ${event}</button>
-      `;
+        weatherAlert[0].innerHTML += `<button type="button" class="btn-alert">**WEATHER ALERT** ${event}</button>`;
         return data;
       });
     } catch (error) {
