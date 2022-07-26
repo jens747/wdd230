@@ -58,6 +58,7 @@ let weatherApp = {
     card3Day.forEach((card, idx) => {
       const { day } = data.daily[idx].temp;
       const { icon } = data.daily[idx].weather[0];
+      const three_day = getNext3Days();
 
       card.innerHTML = `
             <img
@@ -65,7 +66,7 @@ let weatherApp = {
               alt="image for 3-day forecast"
               id="weather-img-day${idx + 1}"
             />
-          <h4>Current temp: <br>${day} °F</h4>
+          <h4>${three_day[idx]} <br>${day} °F</h4>
         `;
     });
     return data;
@@ -82,6 +83,9 @@ let weatherApp = {
   displayWeatherAlert: function (data) {
     try {
       const { alerts } = data;
+
+      if (alerts == undefined) {return data}
+
       alerts.forEach((card, idx) => {
         const { event } = card;
 
